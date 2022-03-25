@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { Routes, Route, useNavigate, Navigate } from 'react-router-dom'
 import NavBar from './components/NavBar/NavBar'
 import Signup from './pages/Signup/Signup'
@@ -11,8 +11,14 @@ import * as authService from './services/authService'
 import * as lineService from './services/Lines'
 
 const App = () => {
+  const [lines, setLines] = useState([])
   const [user, setUser] = useState(authService.getUser())
   const navigate = useNavigate()
+
+  useEffect(() => {
+    lineService.getAll()
+    .then(allLines => setLines(allLines))
+  }, [])
 
   const handleLogout = () => {
     authService.logout()
@@ -47,7 +53,7 @@ const App = () => {
         />
         <Route path='/lines' 
         element={<Lines 
-        lines={lineService.getAll()}
+        lines={lines}
         
         />} />
       </Routes>

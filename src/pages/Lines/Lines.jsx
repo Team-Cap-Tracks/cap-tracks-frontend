@@ -1,9 +1,11 @@
-const Lines = ({ lines }) => {
-  console.log(lines);
+const Lines = (props) => {
+  console.log(props.lines);
   return (
     <>
     <h1>Lines</h1>
-    <p>{lines.line}</p>
+    {props.lines.map(line => (
+      <p>{props.lines}</p>
+    ))}
     </>
   )
 }
