@@ -8,6 +8,7 @@ import Profiles from './pages/Profiles/Profiles'
 import ChangePassword from './pages/ChangePassword/ChangePassword'
 import Lines from './pages/Lines/Lines'
 import * as authService from './services/authService'
+import * as lineService from './services/Lines'
 
 const App = () => {
   const [user, setUser] = useState(authService.getUser())
@@ -44,7 +45,10 @@ const App = () => {
           path="/changePassword"
           element={user ? <ChangePassword handleSignupOrLogin={handleSignupOrLogin}/> : <Navigate to="/login" />}
         />
-        <Route path='lines' element={<Lines />} />
+        <Route path='lines' 
+        element={<Lines 
+        lines={lineService.getAll()}
+        />} />
       </Routes>
     </>
   )
