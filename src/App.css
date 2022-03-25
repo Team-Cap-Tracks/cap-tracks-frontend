@@ -20,7 +20,6 @@
   padding: 10vh;
   font-size: calc(10px + 2vmin);
   color: white;
-
 }
 
 .ulclass {
@@ -31,6 +30,11 @@
   text-decoration: none;
   font-family: poppins;
   font-weight: bold;
+  width: 100vw;
+}
+
+.ulclass li:last-child {
+  margin-left: auto;
 }
 
 .App-link {
