@@ -48,6 +48,7 @@ const App = () => {
         <Route path='lines' 
         element={<Lines 
         lines={lineService.getAll()}
+        
         />} />
       </Routes>
     </>
