@@ -26,6 +26,7 @@ const App = () => {
 
   return (
     <>
+    <p><i class="bi bi-person-circle"></i></p>
       <NavBar user={user} handleLogout={handleLogout} />
       <Routes>
         <Route path="/" element={<Landing user={user} />} />
