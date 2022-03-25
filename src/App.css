@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  
 }
 
 .App-logo {
@@ -14,16 +15,18 @@
 }
 
 .Nav-Bar {
-  background-color: #b3ccff;
-  min-height: 5vh;
-  max-height: 6vh;
+  background-color: #272643;
+  min-height: 3vh;
+  max-height: 3vh;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  padding: 30px;
+  padding: 10vh;
   font-size: calc(10px + 2vmin);
   color: white;
+  list-style: none;
+  
 }
 
 .App-link {
