@@ -12,7 +12,7 @@ const NavBar = ({ user, handleLogout }) => {
             <li><i class="bi bi-arrow-left-square-fill"></i></li>
             <li>Cap-Tracks</li>
             <li><i class="bi bi-map"></i></li>
-            <li><Link to="/profiles"><p><i class="bi bi-person-circle"></i></p></Link></li>
+            <li><Link to="/profiles"><i class="bi bi-person-circle"></i></Link></li>
             {/* <li><Link to="" onClick={handleLogout}>LOG OUT</Link></li>
             <li><Link to="/changePassword">Change Password</Link></li> */}
           </ul>
