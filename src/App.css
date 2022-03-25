@@ -35,6 +35,12 @@
 
 .ulclass li:last-child {
   margin-left: auto;
+  margin-right: 1rem;
+}
+
+.ulclass li:first-child {
+  margin-right: auto;
+  margin-left: 1rem;
 }
 
 .App-link {
