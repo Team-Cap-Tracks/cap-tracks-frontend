@@ -1,6 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
+
 .App {
   text-align: center;
-  
 }
 
 .App-logo {
@@ -15,7 +16,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
   padding: 10vh;
   font-size: calc(10px + 2vmin);
   color: white;
@@ -28,6 +29,8 @@
   list-style: none;
   color: inherit;
   text-decoration: none;
+  font-family: poppins;
+  font-weight: bold;
 }
 
 .App-link {
