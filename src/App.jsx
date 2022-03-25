@@ -45,7 +45,7 @@ const App = () => {
           path="/changePassword"
           element={user ? <ChangePassword handleSignupOrLogin={handleSignupOrLogin}/> : <Navigate to="/login" />}
         />
-        <Route path='lines' 
+        <Route path='/lines' 
         element={<Lines 
         lines={lineService.getAll()}
         
