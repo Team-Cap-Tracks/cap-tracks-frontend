@@ -1,8 +1,10 @@
 import { Link } from 'react-router-dom'
 
+
 const NavBar = ({ user, handleLogout }) => {
   return (
     <>
+      <header className="Nav-Bar">
       {user ?
         <nav>
           <ul>
@@ -20,6 +22,7 @@ const NavBar = ({ user, handleLogout }) => {
           </ul>
         </nav>
       }
+      </header>
     </>
   )
 }

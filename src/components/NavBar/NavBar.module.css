@@ -1,0 +1,12 @@
+.Nav-Bar {
+  background-color: #b3ccff;
+  min-height: 5vh;
+  max-height: 6vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
