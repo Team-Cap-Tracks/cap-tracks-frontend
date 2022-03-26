@@ -7,9 +7,11 @@ export const Nav = styled.nav`
   display: flex;
   justify-content: space-between;
   padding: .5rem calc((100vw - 1000px) / 2);
-  z-index: 10`
+  z-index: 10
+`
 
 export const NavLink = styled(Link)`
+  font-family: poppins;
   color: #fff;
   display: flex;
   align-items: center;
