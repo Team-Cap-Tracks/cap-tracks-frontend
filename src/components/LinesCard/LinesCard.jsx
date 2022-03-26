@@ -1,4 +1,3 @@
-
 const LinesCard = ({ lines }) => {
   return (
     <>
@@ -8,6 +7,5 @@ const LinesCard = ({ lines }) => {
     </>
   )
 }
-
 
 export default LinesCard
