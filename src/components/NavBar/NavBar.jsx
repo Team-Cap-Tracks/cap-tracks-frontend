@@ -1,4 +1,6 @@
+import styled from 'styled-components'
 import { Link } from 'react-router-dom'
+import {FaBars} from 'react-icons/fa'
 
 
 const NavBar = ({ user, handleLogout }) => {

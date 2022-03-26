@@ -19,6 +19,9 @@ const NavBar = () => {
           <NavLink to='/map' activeStyle>
           <i className="bi bi-map"></i>
           </NavLink>
+          <NavLink to='/profiles' activeStyle>
+          <i className="bi bi-person-circle"></i>
+          </NavLink>
         </NavMenu>
       </Nav>
     </>
