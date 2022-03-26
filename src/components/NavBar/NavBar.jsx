@@ -10,7 +10,7 @@ const NavBar = ({ user, handleLogout }) => {
           <ul className='ulclass'>
             {/* <li>Welcome, {user.name}</li> */}
             <li><i className="bi bi-arrow-left-square-fill"></i></li>
-            <li>Cap-Tracks</li>
+            <li>Cap Tracks</li>
             <li><i className="bi bi-map"></i></li>
             <li><Link to="/profiles"><i className="bi bi-person-circle"></i></Link></li>
             {/* <li><Link to="" onClick={handleLogout}>LOG OUT</Link></li>
