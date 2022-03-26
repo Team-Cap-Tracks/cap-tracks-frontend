@@ -1,28 +1,19 @@
-import { useState, useEffect } from 'react'
-import * as profileService from '../../services/profileService'
+import { Link } from 'react-router-dom'
 
-const Profiles = () => {
-  const [profiles, setProfiles] = useState([])
-
-  useEffect(()=> {
-    profileService.getAllProfiles()
-    .then(profiles => setProfiles(profiles))
-  }, [])
-
+const Profiles = ({ user, handleLogout }) => {
   return (
     <>
-      <h1>Hello. This is a list of all the profiles.</h1>
-      {profiles.length ? 
-        <>
-          {profiles.map(profile=>
-            <p key={profile._id}>{profile.name}</p>
-          )}
-        </>
+      {user ?
+      <ul>
+      <li>Welcome, {user.name}</li>
+      <li><Link to="" onClick={handleLogout}>LOG OUT</Link></li>
+      <li><Link to="/changePassword">Change Password</Link></li>
+      </ul>
       :
-        <p>No profiles yet</p>
+      <h1>No User</h1>
       }
     </>
   )
 }
- 
+
 export default Profiles

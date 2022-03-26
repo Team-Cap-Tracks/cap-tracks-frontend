@@ -1,5 +1,13 @@
+body {
+  background-color: rgb(231, 246, 245);
+}
 .container {
   display: flex;
   align-items: center;
   flex-direction: column;
+}
+
+img {
+  width: 40rem;
+  height: 40rem;
 }
