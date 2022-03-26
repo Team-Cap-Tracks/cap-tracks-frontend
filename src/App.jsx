@@ -48,7 +48,10 @@ const App = () => {
         />
         <Route
           path="/profiles"
-          element={user ? <Profiles /> : <Navigate to="/login" />}
+          element={user ? <Profiles 
+          user={user} handleLogout={handleLogout} />
+          : 
+          <Navigate to="/" />}
         />
         <Route
           path="/changePassword"
