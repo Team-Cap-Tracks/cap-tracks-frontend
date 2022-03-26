@@ -1,11 +1,13 @@
-const Lines = (props) => {
-  console.log(props.lines);
+import LinesCard from "../../components/LinesCard/LinesCard";
 
+const Lines = (props) => {
   return (
     <>
     <h1>Lines</h1>
     {props.lines.map(line => {
-      return <p>{line.line}</p>
+      return <p><LinesCard
+      lines={props.lines}
+       /></p>
     })}
     </>
   )
