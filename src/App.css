@@ -9,7 +9,7 @@
   pointer-events: none;
 }
 
-.Nav-Bar {
+/* .Nav-Bar {
   background-color: #272643;
   min-height: 3vh;
   max-height: 3vh;
@@ -80,7 +80,7 @@
 
 .ulclass-no-user li:nth-child(3) {
   margin-left: 24.5%;
-}
+} */
 
 .App-link {
   color: #61dafb;

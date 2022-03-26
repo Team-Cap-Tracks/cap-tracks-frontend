@@ -1,21 +1,18 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
 import { Nav, NavLink, NavMenu } from './NavBarElements'
 
 const NavBar = () => {
   return (
     <>
       <Nav>
-        <NavLink to='/'>
-          <h1>Logo</h1>
-        </NavLink>
-        <NavMenu>
-          <NavLink to='/' activeStyle>
+      <NavLink to='/back' activeStyle>
             <i className="bi bi-arrow-left-square-fill"></i>
           </NavLink>
-          <NavLink to='/' activeStyle>
-            Cap Tracks
-          </NavLink>
+        <NavLink to='/'>
+          <h1>Cap Tracks</h1>
+        </NavLink>
+        <NavMenu>
+
           <NavLink to='/map' activeStyle>
           <i className="bi bi-map"></i>
           </NavLink>
@@ -29,3 +26,4 @@ const NavBar = () => {
 }
 
 export default NavBar
+
