@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import LinesCard from "../../components/LinesCard/LinesCard";
 
 const Lines = (props) => {
@@ -5,10 +6,13 @@ const Lines = (props) => {
     <>
     <h1>Lines</h1>
     {props.lines.map(line => {
-      return <LinesCard
+      return <Link to='/stations'
       key={line._id}
-      lines={line}
-      />
+      >
+        <LinesCard
+        lines={line}
+        />
+      </Link>
     })}
     </>
   )

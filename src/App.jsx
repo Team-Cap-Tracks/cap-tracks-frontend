@@ -7,6 +7,7 @@ import Landing from './pages/Landing/Landing'
 import Profiles from './pages/Profiles/Profiles'
 import ChangePassword from './pages/ChangePassword/ChangePassword'
 import Lines from './pages/Lines/Lines'
+import Stations from './pages/Stations/Stations'
 import * as authService from './services/authService'
 import * as lineService from './services/Lines'
 
@@ -34,7 +35,6 @@ const App = () => {
 
   return (
     <>
-      
       <NavBar user={user} handleLogout={handleLogout} />
       <Routes>
         <Route path="/" element={<Landing user={user} />} />
@@ -58,10 +58,12 @@ const App = () => {
           element={user ? <ChangePassword handleSignupOrLogin={handleSignupOrLogin}/> : <Navigate to="/login" />}
         />
         <Route path='/lines' 
-        element={<Lines 
-        lines={lines}
-        
+          element={<Lines 
+          lines={lines}
         />} />
+        <Route path='/stations' 
+          element={<Stations lines={lines} />}
+        />
       </Routes>
     </>
   )
