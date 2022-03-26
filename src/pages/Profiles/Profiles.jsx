@@ -1,11 +1,17 @@
 import { Link } from 'react-router-dom'
 
-const Profiles = (props) => {
+const Profiles = ({ user, handleLogout }) => {
   return (
     <>
-      <h1>Welcome,{props.user}</h1>
-      <li><Link to="" onClick={props.handleLogout}>LOG OUT</Link></li>
+      {user ?
+      <ul>
+      <li>Welcome, {user.name}</li>
+      <li><Link to="" onClick={handleLogout}>LOG OUT</Link></li>
       <li><Link to="/changePassword">Change Password</Link></li>
+      </ul>
+      :
+      <h1>No User</h1>
+      }
     </>
   )
 }

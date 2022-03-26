@@ -48,10 +48,10 @@ const App = () => {
         />
         <Route
           path="/profiles"
-          element={user ? <Profiles /> : <Navigate to="/login"
-          user={user} handleLogout={handleLogout} 
-          />}
-          
+          element={user ? <Profiles 
+          user={user} handleLogout={handleLogout} />
+          : 
+          <Navigate to="/login" />}
         />
         <Route
           path="/changePassword"
