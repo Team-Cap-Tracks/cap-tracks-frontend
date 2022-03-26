@@ -35,7 +35,6 @@ const App = () => {
 
   return (
     <>
-      
       <NavBar user={user} handleLogout={handleLogout} />
       <Routes>
         <Route path="/" element={<Landing user={user} />} />
@@ -62,7 +61,7 @@ const App = () => {
         element={<Lines 
         lines={lines}
         />} />
-        <Route path='/stations' element={<Stations />} />
+        <Route path='/stations' element={<Stations />} stations={lines.stations} />
       </Routes>
     </>
   )
