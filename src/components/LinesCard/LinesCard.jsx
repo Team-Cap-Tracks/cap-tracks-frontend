@@ -1,5 +1,3 @@
-// import styles from './LinesCard.module.css'
-
 const LinesCard = ({ lines }) => {
   return (
     <>
