@@ -58,10 +58,12 @@ const App = () => {
           element={user ? <ChangePassword handleSignupOrLogin={handleSignupOrLogin}/> : <Navigate to="/login" />}
         />
         <Route path='/lines' 
-        element={<Lines 
-        lines={lines}
+          element={<Lines 
+          lines={lines}
         />} />
-        <Route path='/stations' element={<Stations />} stations={lines.stations} />
+        <Route path='/stations' 
+          element={<Stations lines={lines} />}
+        />
       </Routes>
     </>
   )
