@@ -62,7 +62,7 @@ const App = () => {
         element={<Lines 
         lines={lines}
         />} />
-
+        <Route path='/stations' element={<Stations />} />
       </Routes>
     </>
   )
