@@ -40,7 +40,7 @@ const NavBar = ({user}) => {
               <i className="bi bi-map"></i>
             </NavLink>
             <NavLink to='/login' activeStyle>
-              Login
+              <i className="bi bi-person-circle"></i>
             </NavLink>
           </NavMenu>
         </Nav>
