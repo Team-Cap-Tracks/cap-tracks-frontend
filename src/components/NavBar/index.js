@@ -1,5 +1,6 @@
 import React from 'react'
-import { NavLink } from 'react-router-dom'
+import { Link } from 'react-router-dom'
+import { Nav, NavLink, NavMenu } from './NavBarElements'
 
 const NavBar = () => {
   return (
@@ -8,7 +9,6 @@ const NavBar = () => {
         <NavLink to='/'>
           <h1>Logo</h1>
         </NavLink>
-        <Bars />
         <NavMenu>
           <NavLink to='/' activeStyle>
             <i className="bi bi-arrow-left-square-fill"></i>
