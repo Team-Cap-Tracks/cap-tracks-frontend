@@ -8,7 +8,7 @@ const Lines = (props) => {
       return <LinesCard
       key={line._id}
       lines={line}
-       />
+      />
     })}
     </>
   )
