@@ -36,7 +36,9 @@
   padding: 0;
 }
 
-.ulclass li:last-child {
+
+
+/* .ulclass li:last-child {
   display: flex;
   margin-left: .5rem;
   margin-right: 1rem;
@@ -80,8 +82,9 @@
 
 .ulclass-no-user li:nth-child(3) {
   margin-left: 24.5%;
-} */
+} */ */
 
 .App-link {
   color: #61dafb;
 } 
+

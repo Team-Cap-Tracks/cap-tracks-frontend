@@ -12,7 +12,9 @@ export const Nav = styled.nav`
 
 export const NavLink = styled(Link)`
   font-family: poppins;
+  font-weight: bold;
   color: #fff;
+  ${'' /* color: #2C698D; */}
   display: flex;
   align-items: center;
   text-decoration: none;
@@ -31,6 +33,7 @@ export const NavLinkLeft = styled(Link)`
 `
 
 export const NavMenu = styled.div`
+  
   display: flex;
   align-items: center;
   margin-right: -24px;
