@@ -6,7 +6,7 @@ const Lines = (props) => {
     <>
     <h1>Lines</h1>
     {props.lines.map(line => {
-      return <Link to=''
+      return <Link to='/stations'
       key={line._id}
       >
         <LinesCard
