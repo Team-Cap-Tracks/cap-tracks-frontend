@@ -51,7 +51,7 @@ const App = () => {
           element={user ? <Profiles 
           user={user} handleLogout={handleLogout} />
           : 
-          <Navigate to="/login" />}
+          <Navigate to="/" />}
         />
         <Route
           path="/changePassword"
