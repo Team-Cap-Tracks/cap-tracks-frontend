@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import LinesCard from "../../components/LinesCard/LinesCard";
 
 const Lines = (props) => {
