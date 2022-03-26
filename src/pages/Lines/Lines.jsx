@@ -6,10 +6,13 @@ const Lines = (props) => {
     <>
     <h1>Lines</h1>
     {props.lines.map(line => {
-      return <LinesCard
+      return <Link to=''
       key={line._id}
-      lines={line}
-      />
+      >
+        <LinesCard
+        lines={line}
+        />
+      </Link>
     })}
     </>
   )
