@@ -1,7 +1,12 @@
 import React from "react";
+import { Container, Wrapper, }
 
 export default function Footer({ children, ...restProps}) {
   return <Container {...restProps}>{children}</Container>
+}
+
+Footer.Row = function FooterRow({ children, ...restProps}) {
+  return <Row {...restProps}>{children}</Row>
 }
 
 Footer.Row = function FooterRow({ children, ...restProps}) {
