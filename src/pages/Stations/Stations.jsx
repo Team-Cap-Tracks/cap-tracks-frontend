@@ -5,7 +5,7 @@ const StationsList = (props) => {
   <>
     <h1>Stations</h1>
     {props.lines.map(line => {
-      return {line}
+      return console.log(line.Stations);
     })}
 
   </>
