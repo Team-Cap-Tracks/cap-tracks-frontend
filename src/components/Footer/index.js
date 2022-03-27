@@ -5,5 +5,5 @@ export default function Footer({ children, ...restProps}) {
 }
 
 Footer.Wrapper = function FooterWrapper({ children, ...restProps}) {
-  
+  return <Wrapper {...restProps}>{children}</Wrapper>
 }
