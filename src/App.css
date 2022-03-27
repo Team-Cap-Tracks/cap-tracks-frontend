@@ -9,6 +9,20 @@
   pointer-events: none;
 }
 
+.linecard {
+  /* background-color: #b3ccff; */
+  font-style: normal;
+  color: #272643;
+  background-color: #bae8e8;
+  /* color: #2c698d; */
+  font-weight: bold;
+  font-family: 'Poppins', sans-serif;
+  text-decoration: none;
+  text-align: center;
+}
+
+
+
 /* .Nav-Bar {
   background-color: #272643;
   min-height: 3vh;
