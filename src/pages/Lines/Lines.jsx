@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom'
 import LinesCard from "../../components/LinesCard/LinesCard";
+import styles from './Lines.module.css'
 
 const Lines = (props) => {
   return (
