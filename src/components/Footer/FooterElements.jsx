@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 import { FooterLink as Link } from 'react-router-dom'
 
-export const FooterLink = styled.footer`
+export const FooterArea = styled.footer`
   background: #272643;
   height: 10vh;
   display: flex;

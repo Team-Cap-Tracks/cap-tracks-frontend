@@ -10,6 +10,7 @@ import Lines from './pages/Lines/Lines'
 import StationsList from './pages/Stations/Stations'
 import * as authService from './services/authService'
 import * as lineService from './services/Lines'
+import Footer from './components/Footer/index.js'
 
 import "./App.css"
 
@@ -65,6 +66,7 @@ const App = () => {
           element={<StationsList lines={lines} />}
         />
       </Routes>
+      <Footer />
     </>
   )
 }

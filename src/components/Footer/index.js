@@ -1,17 +1,19 @@
 import React from "react";
-import { Footer, FooterLink, FooterText } from "./FooterElements"
+import { FooterLink, FooterText, FooterArea } from "./FooterElements"
 
 const Footer = () => {
   return (
     <>
-      <Footer>
+      <FooterArea>
         <FooterText>
-
+          <h1>Footer Text</h1>
         </FooterText>
         <FooterLink>
-          
+
         </FooterLink>
-      </Footer>
+      </FooterArea>
     </>
   )
 }
+
+export default Footer
