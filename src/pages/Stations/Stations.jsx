@@ -1,5 +1,5 @@
 const StationsList = (props) => {
-  
+  console.log(props);
   
  return (
   <>
