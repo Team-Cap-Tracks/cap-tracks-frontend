@@ -7,7 +7,7 @@ const NavBar = ({user}) => {
     <>
       {user ?
         <Nav>
-          <NavLinkLeft to='' activeStyle>
+          <NavLinkLeft to=''>
             <i className="bi bi-arrow-left-square-fill"></i>
             
           </NavLinkLeft>
@@ -15,33 +15,33 @@ const NavBar = ({user}) => {
             <h1>Cap Tracks</h1>
           </NavLink>
           <NavMenu>
-            <NavLink to='/lines' activeStyle>
-              <i class="bi bi-calendar"></i>
+            <NavLink to='/lines'>
+              <i className="bi bi-calendar"></i>
             </NavLink>
-            <NavLink to='/map' activeStyle>
+            <NavLink to='/map'>
               <i className="bi bi-map"></i>
             </NavLink>
-            <NavLink to='/profiles' activeStyle>
+            <NavLink to='/profiles'>
               <i className="bi bi-person-circle"></i>
             </NavLink>
           </NavMenu>
         </Nav>
       :
         <Nav>
-        <NavLinkLeft to='/back' activeStyle>
+        <NavLinkLeft to='/back'>
             <i className="bi bi-arrow-left-square-fill"></i>
           </NavLinkLeft>
           <NavLink to='/'>
             <h1>Cap Tracks</h1>
           </NavLink>
           <NavMenu>
-            <NavLink to='/lines' activeStyle>
-              <i class="bi bi-calendar"></i>
+            <NavLink to='/lines'>
+              <i className="bi bi-calendar"></i>
             </NavLink>
-            <NavLink to='/map' activeStyle>
+            <NavLink to='/map'>
               <i className="bi bi-map"></i>
             </NavLink>
-            <NavLink to='/login' activeStyle>
+            <NavLink to='/login'>
               <i className="bi bi-person-circle"></i>
             </NavLink>
           </NavMenu>
