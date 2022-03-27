@@ -3,7 +3,6 @@ import LinesCard from "../../components/LinesCard/LinesCard";
 
 const Lines = (props) => {
 
-  console.log(props.lines.Stations);
   return (
     <>
     <h1>Lines</h1>
