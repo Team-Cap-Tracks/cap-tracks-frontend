@@ -7,7 +7,7 @@ export const Nav = styled.nav`
   height: 10vh;
   display: flex;
   justify-content: space-between;
-  padding: .5rem calc((100vw - 1000px) / 2);
+  padding: .5rem calc((100vw - 1200px) / 2);
   z-index: 10;
 `
 
@@ -19,7 +19,7 @@ export const NavLink = styled(Link)`
   display: flex;
   align-items: center;
   text-decoration: none;
-  padding: 0 1rem;
+  padding: 0 .75rem;
   height: 100%;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
@@ -32,10 +32,12 @@ export const NavLinkLeft = styled(Link)`
   color: #fff;
   display: flex;
   align-items: center;
+  align-content: flex-start;
   text-decoration: none;
-  padding: 0 .5rem;
+  padding: 0 0rem;
   height: 100%;
   cursor: pointer;
+  margin-right: 8%;
 `
 
 export const NavMenu = styled.div`
