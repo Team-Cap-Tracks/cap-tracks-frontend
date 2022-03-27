@@ -7,7 +7,7 @@ import Landing from './pages/Landing/Landing'
 import Profiles from './pages/Profiles/Profiles'
 import ChangePassword from './pages/ChangePassword/ChangePassword'
 import Lines from './pages/Lines/Lines'
-import Stations from './pages/Stations/Stations'
+import StationsList from './pages/Stations/Stations'
 import * as authService from './services/authService'
 import * as lineService from './services/Lines'
 
@@ -62,7 +62,7 @@ const App = () => {
           lines={lines}
         />} />
         <Route path='/stations' 
-          element={<Stations lines={lines} />}
+          element={<StationsList lines={lines} />}
         />
       </Routes>
     </>
