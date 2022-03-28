@@ -4,6 +4,8 @@ import { Nav, NavLink, NavLinkLeft, NavMenu } from './NavBarElements'
 
 
 const NavBar = ({user}) => {
+  const navigate = useNavigate()
+
   return (
     <>
       {user ?
