@@ -10,7 +10,7 @@ const StationsList = (props) => {
         return (
           <>
             {stationList.Name}
-            {stationList.Name}
+            {stationList.Address.Street}
           </>
         )
       }
