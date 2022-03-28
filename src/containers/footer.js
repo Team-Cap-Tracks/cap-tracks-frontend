@@ -8,10 +8,10 @@ export function FooterContainer() {
         <Footer.Row>
           <Footer.Column>
             <Footer.Title>Team Members</Footer.Title>
-            <Footer.Link href="#">Cody</Footer.Link>
-            <Footer.Link href="#">Christine</Footer.Link>
-            <Footer.Link href="#">Caleb</Footer.Link>
-            <Footer.Link href="#">Marcus</Footer.Link>
+            <Footer.Link href="#"><i class="bi bi-emoji-smile"></i> Cody</Footer.Link>
+            <Footer.Link href="#"><i class="bi bi-incognito"></i> Christine</Footer.Link>
+            <Footer.Link href="#"><i class="bi bi-robot"></i> Caleb</Footer.Link>
+            <Footer.Link href="#"><i class="bi bi-emoji-sunglasses"></i> Marcus</Footer.Link>
           </Footer.Column>
           <Footer.Column>
             <Footer.Title>Github Repository</Footer.Title>
