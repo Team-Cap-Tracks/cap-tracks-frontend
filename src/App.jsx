@@ -67,7 +67,8 @@ const App = () => {
           element={<StationsList  />}
         />
       </Routes>
-      <FooterContainer />
+      <FooterContainer
+      />
     </>
   )
 }
