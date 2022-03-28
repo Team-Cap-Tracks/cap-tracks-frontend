@@ -1,5 +1,6 @@
 import { useLocation } from "react-router-dom";
 import StationDetailsCard from '../../components/StationDetailsCard/StationDetailsCard'
+import styles from './Stations.module.css'
 
 const StationDetails = (props) => {
   let location = useLocation()
