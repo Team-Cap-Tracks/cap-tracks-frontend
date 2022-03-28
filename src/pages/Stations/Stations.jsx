@@ -1,5 +1,5 @@
 import { Link, useLocation } from 'react-router-dom'
-import StationDetailsCard from '../../components/StationDetailsCard/StationDetailsCard'
+
 const StationsList = (props) => {
   let location = useLocation()
   console.log(location)
@@ -10,16 +10,12 @@ const StationsList = (props) => {
         return (
           <>
             <Link 
-              to='/stationDetails'
+              to='/station-details'
               key={stationList.Code}
               state={{stationList}}
             >
               <h3><strong>{stationList.Name}</strong></h3>
             </Link>
-              {stationList.Address.City}
-              {stationList.Address.State}
-              {stationList.Address.Street}
-              {stationList.Address.Zip}
           </>
         )
       }
