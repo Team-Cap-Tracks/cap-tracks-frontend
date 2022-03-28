@@ -13,7 +13,7 @@ const StationsList = (props) => {
             <Link 
               to='/stationDetails'
               key={stationList.Code}
-              state={`${stationList.Station}`}
+              state={{`${stationList.Station}`}}
             >
               <h3><strong>{stationList.Name}</strong></h3>
             </Link>
