@@ -9,19 +9,21 @@ import ChangePassword from './pages/ChangePassword/ChangePassword'
 import Lines from './pages/Lines/Lines'
 import StationsList from './pages/Stations/Stations'
 import * as authService from './services/authService'
-// import * as lineService from './services/Lines'
+import * as lineService from './services/Lines'
+import { FooterContainer } from './containers/footer'
+
 
 import "./App.css"
 
 const App = () => {
-  // const [lines, setLines] = useState([])
+  const [lines, setLines] = useState([])
   const [user, setUser] = useState(authService.getUser())
   const navigate = useNavigate()
 
-  // useEffect(() => {
-  //   lineService.getAll()
-  //   .then(allLines => setLines(allLines))
-  // }, [])
+  useEffect(() => {
+    lineService.getAll()
+    .then(allLines => setLines(allLines))
+  }, [])
 
   const handleLogout = () => {
     authService.logout()
@@ -59,12 +61,13 @@ const App = () => {
         />
         <Route path='/lines' 
           element={<Lines 
-          
+          lines={lines}
         />} />
         <Route path='/stations' 
           element={<StationsList  />}
         />
       </Routes>
+      <FooterContainer />
     </>
   )
 }
