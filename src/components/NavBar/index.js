@@ -15,8 +15,7 @@ const NavBar = ({user}) => {
       {user ?
         <Nav>
           <NavLinkLeft to='' onClick={handleGoBack}>
-            <i className="bi bi-arrow-left-square-fill"></i>
-            
+            <i className="bi bi-arrow-left-square-fill" ></i>
           </NavLinkLeft>
           <NavLink to='/'>
             <p className="cap">Cap - Tracks</p>
@@ -35,7 +34,7 @@ const NavBar = ({user}) => {
         </Nav>
       :
         <Nav>
-        <NavLinkLeft to='/back'>
+          <NavLinkLeft to='' onClick={handleGoBack}>
             <i className="bi bi-arrow-left-square-fill"></i>
           </NavLinkLeft>
           <NavLink to='/'>
