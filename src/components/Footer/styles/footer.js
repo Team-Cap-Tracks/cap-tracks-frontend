@@ -5,7 +5,13 @@ export const Container = styled.div`
   background: #272643;
 `
 
-export const Wrapper = styled.div``
+export const Wrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 100%;
+  margin: 0 auto;
+`
 
 export const Row = styled.div``
 
