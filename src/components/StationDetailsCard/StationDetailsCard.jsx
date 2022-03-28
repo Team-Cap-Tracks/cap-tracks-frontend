@@ -1,15 +1,14 @@
 const StationDetailsCard = (props) => {
-  console.log('Card', props);
+  console.log('Card', props.stationInfo.state.stationList.Name);
 
   return (
     <>
       <div className="stationDetailsCard">
         <p className="stationDetails">
-          {/* {props.stationList.Address.City}
-          {props.stationList.Address.State}
-          {props.stationList.Address.Street}
-          {props.stationList.Address.Zip} */}
-          {props}
+          {props.stationInfo.state.stationList.Name}
+          {props.stationInfo.state.stationList.Name}
+          {props.stationInfo.state.stationList.Name}
+          {props.stationInfo.state.stationList.Name}
         </p>
       </div>
     </>
