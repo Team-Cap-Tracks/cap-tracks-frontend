@@ -14,7 +14,7 @@ const NavBar = ({user}) => {
     <>
       {user ?
         <Nav>
-          <NavLinkLeft to=''>
+          <NavLinkLeft to='' onClick={handleGoBack}>
             <i className="bi bi-arrow-left-square-fill"></i>
             
           </NavLinkLeft>
