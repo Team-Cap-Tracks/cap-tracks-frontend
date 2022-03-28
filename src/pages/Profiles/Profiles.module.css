@@ -1,0 +1,8 @@
+li {
+    text-decoration: none;
+    color: rgb(39, 38, 67);
+    font-family: "Poppins";
+    font-weight: bold;
+    list-style-type: none;
+    text-align: center;
+}

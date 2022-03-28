@@ -25,6 +25,7 @@ img {
   text-decoration: none;
   color: rgb(39, 38, 67);
   font-family: "Poppins";
+  font-weight: bold;
 }
 
 .button:hover {
