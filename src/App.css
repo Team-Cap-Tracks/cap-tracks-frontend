@@ -11,8 +11,8 @@
 
 .linecard {
   font-style: normal;
-  color: white;
-  font-weight: bold;
+  color: black;
+  font-weight: 900;
   font-family: 'Poppins', sans-serif;
   text-decoration: none;
   text-align: center;
@@ -33,7 +33,7 @@
 }
 
 p {
-  font-size: 25px;
+  font-size: 30px;
 }
 
 .linecard:hover {
