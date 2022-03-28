@@ -1,6 +1,5 @@
 import { Link, useLocation } from 'react-router-dom'
-
-
+import StationDetailsCard from '../../components/StationDetailsCard/StationDetailsCard'
 const StationsList = (props) => {
   let location = useLocation()
   console.log(location)

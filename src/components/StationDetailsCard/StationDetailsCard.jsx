@@ -1,6 +1,5 @@
-import { Link, useLocation } from "react-router-dom";
-const StationDetails = (props) => {
-  console.log(props);
+const StationDetailsCard = (props) => {
+
   return (
     <>
       <div className="stationdetailscard">
@@ -10,4 +9,4 @@ const StationDetails = (props) => {
   )
 }
 
-export default StationDetails
+export default StationDetailsCard
