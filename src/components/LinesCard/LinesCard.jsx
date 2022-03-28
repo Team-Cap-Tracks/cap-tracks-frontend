@@ -1,8 +1,8 @@
 const LinesCard = ({ lines }) => {
   return (
     <>
-      <div className="card">
-        <p>{lines.line}</p>
+      <div class="linecard">
+        <p class="line">{lines.line}</p>
       </div>
     </>
   )
