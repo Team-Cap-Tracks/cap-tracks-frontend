@@ -6,7 +6,11 @@ export function FooterContainer() {
     <Footer>
       <Footer.Wrapper>
         <Footer.Column>
-          
+          <Footer.Title>About Us</Footer.Title>
+          <Footer.Link href="#">Cody</Footer.Link>
+          <Footer.Link href="#">Christine</Footer.Link>
+          <Footer.Link href="#">Caleb</Footer.Link>
+          <Footer.Link href="#">Marcus</Footer.Link>
         </Footer.Column>
       </Footer.Wrapper>
     </Footer>
