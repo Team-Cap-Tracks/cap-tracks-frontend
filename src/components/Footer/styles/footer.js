@@ -27,6 +27,15 @@ export const Row = styled.div`
 `
 
 
-export const Link = styled.div``
+export const Link = styled.div`
+  color: #fff;
+  margin-bottom: 20px;
+  font-size: 18px;
+  text-decoration: none;
+
+  &:hover {
+    color: #ff9c00
+  }
+`
 
 export const Title = styled.div``
