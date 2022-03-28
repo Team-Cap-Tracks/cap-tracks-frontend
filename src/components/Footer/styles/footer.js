@@ -32,10 +32,18 @@ export const Link = styled.div`
   margin-bottom: 20px;
   font-size: 18px;
   text-decoration: none;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
 
   &:hover {
-    color: #ff9c00
+    transition: all 0.2s ease-in-out;
+    color: #0d6efd;
   }
 `
 
-export const Title = styled.div``
+export const Title = styled.div`
+  font-size: 24px;
+  color: #fff;
+  margin-bottom: 40px;
+  font-weight: bold;
+`
