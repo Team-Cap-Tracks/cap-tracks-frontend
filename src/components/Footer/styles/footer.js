@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 export const Container = styled.div`
-  padding: 80px 60px;
+  padding: 30px 30px;
   background: #272643;
 `
 export const Wrapper = styled.div`
@@ -9,7 +9,7 @@ export const Wrapper = styled.div`
   flex-direction: column;
   justify-content: center;
   max-width: 100%;
-  margin: 0 auto;
+  margin-right: auto;
 `
 export const Column = styled.div`
   display: flex;
@@ -21,14 +21,15 @@ export const Column = styled.div`
 
 export const Row = styled.div`
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  
   grid-gap: 20px;
 `
 
 export const Link = styled.div`
   color: #fff;
-  margin-bottom: 20px;
-  font-size: 18px;
+  margin-bottom: 15px;
+  font-size: 16px;
   text-decoration: none;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
@@ -40,15 +41,15 @@ export const Link = styled.div`
 `
 
 export const Title = styled.div`
-  font-size: 24px;
+  font-size: 22px;
   color: #fff;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
   font-weight: bold;
 `
 
 export const Info = styled.div`
   color: #fff;
-  margin-bottom: 20px;
-  font-size: 18px;
+  margin-bottom: 15px;
+  font-size: 16px;
   text-decoration: none;
 `

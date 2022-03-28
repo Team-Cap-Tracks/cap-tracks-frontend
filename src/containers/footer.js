@@ -14,11 +14,11 @@ export function FooterContainer() {
             <Footer.Link href="#"><i class="bi bi-emoji-sunglasses"></i> Marcus</Footer.Link>
           </Footer.Column>
           <Footer.Column>
-            <Footer.Title>Github Repository</Footer.Title>
-            <Footer.Link href="#">Cody</Footer.Link>
-            <Footer.Link href="#">Christine</Footer.Link>
-            <Footer.Link href="#">Caleb</Footer.Link>
-            <Footer.Link href="#">Marcus</Footer.Link>
+            <Footer.Title>What goes here?</Footer.Title>
+            <Footer.Link href="#">Jokes?</Footer.Link>
+            <Footer.Link href="#">Confessions?</Footer.Link>
+            <Footer.Link href="#">More info about us?</Footer.Link>
+            <Footer.Link href="#">Who knows</Footer.Link>
           </Footer.Column>
           <Footer.Column>
             <Footer.Title>Contact Us</Footer.Title>
