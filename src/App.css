@@ -9,6 +9,21 @@
   pointer-events: none;
 }
 
+.linecard {
+  font-style: normal;
+  color: #272643;
+  background-color: #bae8e8;
+  font-weight: bold;
+  font-family: 'Poppins', sans-serif;
+  text-decoration: none;
+  text-align: center;
+  width: 50%;
+  margin: auto;
+  border-radius: 5px;
+}
+
+
+
 /* .Nav-Bar {
   background-color: #272643;
   min-height: 3vh;
