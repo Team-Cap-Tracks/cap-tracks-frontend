@@ -2,7 +2,6 @@ import { Link } from 'react-router-dom'
 import LinesCard from "../../components/LinesCard/LinesCard";
 
 const Lines = (props) => {
-
   return (
     <>
     <h1>Lines</h1>
