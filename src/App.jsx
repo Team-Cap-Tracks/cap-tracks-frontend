@@ -64,7 +64,7 @@ const App = () => {
           lines={lines}
         />} />
         <Route path='/stations' 
-          element={<StationsList lines={lines} />}
+          element={<StationsList  />}
         />
       </Routes>
       <FooterContainer
