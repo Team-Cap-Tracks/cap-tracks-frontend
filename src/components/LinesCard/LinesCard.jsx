@@ -1,4 +1,5 @@
 const LinesCard = ({ lines }) => {
+  console.log(lines);
   return (
     <>
       <div class="linecard">
