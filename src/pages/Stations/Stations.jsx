@@ -7,7 +7,7 @@ const StationsList = (props) => {
     <>
       <h1>Stations</h1>
       {location.state.line.Stations.map(stationList => {
-        return {stationList}
+        return `${stationList.Name}`
       }
       )}
       
