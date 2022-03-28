@@ -11,6 +11,7 @@ import StationsList from './pages/Stations/Stations'
 import * as authService from './services/authService'
 import * as lineService from './services/Lines'
 import { FooterContainer } from './containers/footer'
+import StationDetails from './pages/StationDetails/StationDetails.jsx'
 
 
 import "./App.css"
@@ -64,7 +65,10 @@ const App = () => {
           lines={lines}
         />} />
         <Route path='/stations' 
-          element={<StationsList  />}
+          element={<StationsList />}
+        />
+        <Route path='/station-details' 
+          element={<StationDetails />}
         />
       </Routes>
       <FooterContainer

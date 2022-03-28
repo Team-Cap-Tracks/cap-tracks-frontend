@@ -1,4 +1,4 @@
-import { useLocation } from 'react-router-dom'
+import { Link, useLocation } from 'react-router-dom'
 
 const StationsList = (props) => {
   let location = useLocation()
@@ -7,7 +7,17 @@ const StationsList = (props) => {
     <>
       <h1>Stations</h1>
       {location.state.line.Stations.map(stationList => {
-        return `${stationList.Name}`
+        return (
+          <>
+            <Link 
+              to='/station-details'
+              key={stationList.Code}
+              state={{stationList}}
+            >
+              <h3><strong>{stationList.Name}</strong></h3>
+            </Link>
+          </>
+        )
       }
       )}
       
