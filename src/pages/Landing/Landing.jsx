@@ -7,8 +7,8 @@ const Landing = ({ user }) => {
       {/* <h1>hello, {user ? user.name : 'friend'}</h1> */}
       <img src="https://i.imgur.com/bHoOQWE.jpg" alt="DC Metro Map" />
       <br></br>
-      <Link to="/lines">
-      <button>To Metro Lines</button>
+      <Link className={styles.button} to="/lines">
+      To Metro Lines
       </Link>
       <br></br>
     </main>
