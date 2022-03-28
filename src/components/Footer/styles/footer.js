@@ -4,7 +4,6 @@ export const Container = styled.div`
   padding: 80px 60px;
   background: #272643;
 `
-
 export const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
@@ -25,7 +24,6 @@ export const Row = styled.div`
   grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
   grid-gap: 20px;
 `
-
 
 export const Link = styled.div`
   color: #fff;
