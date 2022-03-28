@@ -1,0 +1,9 @@
+.stationcard {
+    background-color: #bae8e8;
+    width: 30%;
+    height: 50%;
+    border-radius: 15px;
+    text-align: center;
+    font-family: "Poppins";
+    font-weight: bold;
+}

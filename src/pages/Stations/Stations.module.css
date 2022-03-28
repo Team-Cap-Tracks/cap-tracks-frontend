@@ -1,0 +1,10 @@
+.stations {
+    margin-top: 15px;
+    color: #272643;
+    font-family: "Poppins";
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+}

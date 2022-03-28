@@ -6,7 +6,7 @@ const StationsList = (props) => {
   console.log(location)
   return (
     <>
-      <h1>Stations</h1>
+      <h1  className={styles.station}>Stations</h1>
       {location.state.line.Stations.map(stationList => {
         return (
           <>
