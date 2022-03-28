@@ -1,5 +1,5 @@
-import { Link } from 'react-router-dom'
-import { useLocation } from 'react-router-dom'
+import { Link, useLocation } from 'react-router-dom'
+
 
 const StationsList = (props) => {
   let location = useLocation()
@@ -13,7 +13,7 @@ const StationsList = (props) => {
             <Link 
               to='/stationDetails'
               key={stationList.Code}
-              state={{`${stationList.Station}`}}
+              state={{stationList}}
             >
               <h3><strong>{stationList.Name}</strong></h3>
             </Link>
