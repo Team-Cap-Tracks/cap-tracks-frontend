@@ -1,6 +1,7 @@
-body {
-  background-color: rgb(231, 246, 245);
+main {
+  background-color: white;
 }
+
 .container {
   display: flex;
   align-items: center;
@@ -11,3 +12,30 @@ img {
   width: 50%;
   height: 50%;
 }
+
+button {
+  border-radius: 20%;
+  border: none;
+  padding: 12px 25px;
+  display: inline-block;
+  background-color: #bae8e8;
+  cursor: pointer;
+  transition: 0.2s;
+  transition-timing-function: ease-in-out;
+}
+
+a {
+  color: rgb(39, 38, 67);
+  font-family: "Poppins";
+  text-decoration: none;
+  font-weight: bold;
+  list-style: none;
+}
+
+button:hover {
+  background-color: #e3f6f5;
+  text-decoration: none;
+  transition: 0.2s;
+  transition-timing-function: ease-in-out;
+}
+
