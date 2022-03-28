@@ -1,8 +1,11 @@
+import styles from './StationDetailsCard.module.css'
+
 const StationDetailsCard = (props) => {
   console.log('Card', props.stationInfo.state.stationList);
 
   return (
     <>
+    <div className={styles.stationcard}>
       <div className="stationDetailsCard">
         <p className="stationDetails">
           {props.stationInfo.state.stationList.Name}<br />
@@ -12,6 +15,7 @@ const StationDetailsCard = (props) => {
           {props.stationInfo.state.stationList.Address.Zip}<br />
 
         </p>
+      </div>
       </div>
     </>
   )

@@ -1,11 +1,12 @@
 import { Link, useLocation } from 'react-router-dom'
+import styles from '../StationDetails/StationDetails'
 
 const StationsList = (props) => {
   let location = useLocation()
   console.log(location)
   return (
     <>
-      <h1>Stations</h1>
+      <h1  className={styles.station}>Stations</h1>
       {location.state.line.Stations.map(stationList => {
         return (
           <>

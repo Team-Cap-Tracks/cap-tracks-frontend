@@ -11,18 +11,29 @@
 
 .linecard {
   font-style: normal;
-  color: #272643;
-  background-color: #bae8e8;
-  font-weight: bold;
+  color: black;
+  font-weight: 900;
   font-family: 'Poppins', sans-serif;
   text-decoration: none;
   text-align: center;
-  width: 50%;
-  margin: auto;
+  width: 20%;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 25px auto;
   border-radius: 5px;
   cursor: pointer;
   transition: 0.2s;
   transition-timing-function: ease-in-out;
+}
+
+.linecard p {
+  margin-bottom: 0;
+}
+
+p {
+  font-size: 30px;
 }
 
 .linecard:hover {
@@ -33,6 +44,10 @@
   font-weight: bold;
 }
 
+
+a {
+  text-decoration: none !important;
+}
 
 /* .Nav-Bar {
   background-color: #272643;
