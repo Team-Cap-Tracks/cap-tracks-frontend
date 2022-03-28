@@ -47,3 +47,10 @@ export const Title = styled.div`
   margin-bottom: 40px;
   font-weight: bold;
 `
+
+export const Info = styled.div`
+  color: #fff;
+  margin-bottom: 20px;
+  font-size: 18px;
+  text-decoration: none;
+`
