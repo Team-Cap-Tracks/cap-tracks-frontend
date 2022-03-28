@@ -6,11 +6,41 @@
   margin-bottom: 50px;
 }
 
-.label,
-.button {
+.label {
   margin-right: .5rem;
 }
 
 .inputContainer {
   margin-bottom: 1rem;
 }
+
+.link {
+  display: flex;
+  align-items: center;
+}
+
+.button {
+  margin-right: .5rem;
+  background-color: #bae8e8;
+  cursor: pointer;
+  transition: 0.2s;
+  transition-timing-function: ease-in-out;
+  border: none;
+  margin: 5px;
+  padding: 15px;
+  border-radius: 8px;
+  text-decoration: none;
+  color: rgb(39, 38, 67);
+  font-family: "Poppins";
+  font-weight: bold;
+}
+
+.button:hover {
+  background-color: #e3f6f5;
+  color: rgb(39, 38, 67);
+  text-decoration: none;
+  transition: 0.2s;
+  transition-timing-function: ease-in-out;
+  font-weight: bold;
+}
+

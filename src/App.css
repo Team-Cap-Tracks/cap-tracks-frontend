@@ -20,8 +20,18 @@
   width: 50%;
   margin: auto;
   border-radius: 5px;
+  cursor: pointer;
+  transition: 0.2s;
+  transition-timing-function: ease-in-out;
 }
 
+.linecard:hover {
+  background-color: #e3f6f5;
+  text-decoration: none;
+  transition: 0.2s;
+  transition-timing-function: ease-in-out;
+  font-weight: bold;
+}
 
 
 /* .Nav-Bar {
