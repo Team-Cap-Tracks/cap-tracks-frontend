@@ -3,3 +3,9 @@
   align-items: center;
   flex-direction: column;
 }
+
+.signup {
+  font-family: "Poppins";
+  color: rgb(39, 38, 67);
+  font-size: 30px;
+}
