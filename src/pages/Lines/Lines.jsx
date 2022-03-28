@@ -3,8 +3,6 @@ import LinesCard from "../../components/LinesCard/LinesCard";
 
 
 const Lines = (props) => {
-
-
   return (
     <>
     <h1>Lines</h1>
@@ -13,8 +11,9 @@ const Lines = (props) => {
       key={line._id}
       >
         <LinesCard
-        lines={line}
+        lines={{line}}
         />
+
       </Link>
     })}
     </>
