@@ -59,6 +59,10 @@ const LoginForm = props => {
         <Link to="/">
           <button className={styles.button}>Cancel</button>
         </Link>
+        <br></br>
+        <Link to="/signup">
+          <a className={styles.link}>Sign Up</a>
+        </Link>
       </div>
     </form>
   )
