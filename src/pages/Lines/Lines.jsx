@@ -9,6 +9,7 @@ const Lines = ({lines}) => {
     {lines.map(line => {
       return <Link to='/stations'
       key={line._id}
+      lines={lines}
       >
         <LinesCard
         lines={line}

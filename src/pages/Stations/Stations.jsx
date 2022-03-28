@@ -1,6 +1,5 @@
 const StationsList = (props) => {
-  // console.log(props)
-
+  console.log(props.lines);
   return (
     <>
       <h1>Stations</h1>
