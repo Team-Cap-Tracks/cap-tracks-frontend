@@ -1,8 +1,9 @@
-const StationDetails = ({ lines }) => {
+const StationDetails = (props) => {
+  console.log(props);
   return (
     <>
-      <div className="linecard">
-        <p className="line">{lines.line}</p>
+      <div className="stationdetailscard">
+        <p className="stationdetails">Yo</p>
       </div>
     </>
   )
