@@ -37,6 +37,9 @@ p {
   margin-top: 10% !important;
 }
 
+a {
+  text-decoration: none !important;
+}
 
 /* .Nav-Bar {
   background-color: #272643;
