@@ -12,7 +12,7 @@ const NavBar = ({user}) => {
             
           </NavLinkLeft>
           <NavLink to='/'>
-            <h1>Cap Tracks</h1>
+            <p className="cap">Cap - Tracks</p>
           </NavLink>
           <NavMenu>
             <NavLink to='/lines'>
