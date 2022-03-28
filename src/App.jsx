@@ -10,7 +10,7 @@ import Lines from './pages/Lines/Lines'
 import StationsList from './pages/Stations/Stations'
 import * as authService from './services/authService'
 import * as lineService from './services/Lines'
-import { FooterContainer } from './container/footer'
+import { FooterContainer } from './containers/footer'
 
 
 import "./App.css"
