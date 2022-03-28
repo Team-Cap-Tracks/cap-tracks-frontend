@@ -5,7 +5,7 @@ import LinesCard from "../../components/LinesCard/LinesCard";
 const Lines = ({lines}) => {
   return (
     <>
-    <h1>Lines</h1>
+    <h1 className="linesh1">Lines</h1>
     {lines.map(line => {
       return <Link to='/stations'
       key={line._id}

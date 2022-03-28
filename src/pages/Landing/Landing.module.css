@@ -9,12 +9,14 @@ main {
 }
 
 img {
-  width: 50%;
-  height: 50%;
+  width: 45%;
+  height: 45%;
 }
 
 .button {
-  background-color: #bae8e8;
+  background-color: #555373;
+  color: #F1EDFF !important;
+  font-size: 20px;
   cursor: pointer;
   transition: 0.2s;
   transition-timing-function: ease-in-out;
@@ -29,8 +31,8 @@ img {
 }
 
 .button:hover {
-  background-color: #e3f6f5;
-  color: rgb(39, 38, 67);
+  background-color: #F1EDFF;
+  color: #555373 !important;
   text-decoration: none;
   transition: 0.2s;
   transition-timing-function: ease-in-out;

@@ -24,8 +24,18 @@
   margin: 25px auto;
   border-radius: 5px;
   cursor: pointer;
-  transition: 0.2s;
-  transition-timing-function: ease-in-out;
+  transition: transform 0.2s ease-in-out;
+}
+
+.linecard:hover {
+  transform: scale(1.5);
+}
+
+.linesh1 {
+  padding-top: 1rem;
+  color: #555373;
+  font-weight: bold;
+  font-style: "Poppins";
 }
 
 .linecard p {
