@@ -9,8 +9,11 @@ const StationsList = (props) => {
       {location.state.line.Stations.map(stationList => {
         return (
           <>
-            {stationList.Name}
+            <h3>{stationList.Name}, {stationList.Code}</h3>
+            {stationList.Address.City}
+            {stationList.Address.State}
             {stationList.Address.Street}
+            {stationList.Address.Zip}
           </>
         )
       }
