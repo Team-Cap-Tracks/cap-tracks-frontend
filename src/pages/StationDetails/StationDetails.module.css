@@ -10,4 +10,8 @@
     font-size: 30px;
 }
 
+.stationdetails {
+    display: flex;
+    align-items: center;
+} 
 
