@@ -1,3 +1,7 @@
+* {
+    text-align: center;
+}
+
 .station {
     margin-top: 15px;
     font-family: "Poppins";
@@ -6,7 +10,4 @@
     font-size: 30px;
 }
 
-.card {
-    display: flex;
-    align-items: center;
-}
+

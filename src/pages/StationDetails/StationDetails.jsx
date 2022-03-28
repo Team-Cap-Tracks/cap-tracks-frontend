@@ -8,7 +8,7 @@ const StationDetails = (props) => {
   return (
     <>
       <h1 className={styles.station}>Station Details</h1>
-      <StationDetailsCard className={styles.card}
+      <StationDetailsCard
         stationInfo={location}/>
     </>
   )
