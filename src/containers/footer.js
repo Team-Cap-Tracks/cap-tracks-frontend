@@ -11,7 +11,7 @@ export function FooterContainer() {
             <Footer.Link href="#"><i className="bi bi-emoji-smile"></i> Cody</Footer.Link>
             <Footer.Link href="#"><i className="bi bi-incognito"></i> Christine</Footer.Link>
             <Footer.Link href="#"><i className="bi bi-robot"></i> Caleb</Footer.Link>
-            <Footer.Link href="#"><i className="bi bi-emoji-sunglasses"></i> Marcus</Footer.Link>
+            <Footer.Link href="https://www.linkedin.com/in/marcus-lindbloom/" target="_blank" rel="noopener noreferrer"><i className="bi bi-emoji-sunglasses"></i> Marcus</Footer.Link>
           </Footer.Column>
           <Footer.Column>
             <Footer.Title>What goes here?</Footer.Title>
