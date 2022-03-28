@@ -1,15 +1,21 @@
 import React from 'react'
+import { useNavigate } from 'react-router-dom'
 import { Nav, NavLink, NavLinkLeft, NavMenu } from './NavBarElements'
 
 
 const NavBar = ({user}) => {
+  const navigate = useNavigate()
+
+  function handleGoBack() {
+    navigate(-1)
+  }
+
   return (
     <>
       {user ?
         <Nav>
-          <NavLinkLeft to=''>
-            <i className="bi bi-arrow-left-square-fill"></i>
-            
+          <NavLinkLeft to='' onClick={handleGoBack}>
+            <i className="bi bi-arrow-left-square-fill" ></i>
           </NavLinkLeft>
           <NavLink to='/'>
             <p className="cap">Cap - Tracks</p>
@@ -28,7 +34,7 @@ const NavBar = ({user}) => {
         </Nav>
       :
         <Nav>
-        <NavLinkLeft to='/back'>
+          <NavLinkLeft to='' onClick={handleGoBack}>
             <i className="bi bi-arrow-left-square-fill"></i>
           </NavLinkLeft>
           <NavLink to='/'>
