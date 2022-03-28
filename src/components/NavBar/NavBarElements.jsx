@@ -13,7 +13,6 @@ export const Nav = styled.nav`
 
 export const NavLink = styled(Link)`
   font-family: poppins;
-  font-weight: bold;
   color: #fff;
   ${'' /* color: #2C698D; */}
   display: flex;
@@ -23,6 +22,7 @@ export const NavLink = styled(Link)`
   height: 100%;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
+  font-weight: bold !important;
 
   &:hover {
     transition: all 0.2s ease-in-out;
