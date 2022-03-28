@@ -18,11 +18,23 @@
   text-decoration: none;
   text-align: center;
   width: 20%;
-  margin: auto;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 25px auto;
   border-radius: 5px;
   cursor: pointer;
   transition: 0.2s;
   transition-timing-function: ease-in-out;
+}
+
+.linecard p {
+  margin-bottom: 0;
+}
+
+p {
+  font-size: 25px;
 }
 
 .linecard:hover {
@@ -33,9 +45,6 @@
   font-weight: bold;
 }
 
-p {
-  margin-top: 10% !important;
-}
 
 a {
   text-decoration: none !important;
