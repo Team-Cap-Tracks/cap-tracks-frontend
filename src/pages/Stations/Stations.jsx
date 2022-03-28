@@ -9,7 +9,7 @@ const StationsList = (props) => {
       {location.state.line.Stations.map(stationList => {
         return (
           <>
-            <h3>{stationList.Name}, {stationList.Code}</h3>
+            <h3><strong>{stationList.Name}</strong></h3>
             {stationList.Address.City}
             {stationList.Address.State}
             {stationList.Address.Street}
