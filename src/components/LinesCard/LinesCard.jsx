@@ -1,8 +1,9 @@
-const LinesCard = ({ lines }) => {
+const LinesCard = (props) => {
+  console.log(props);
   return (
     <>
       <div className="linecard">
-        <p className="line">{lines.line}</p>
+        <p className="line">{props.lines.line}</p>
       </div>
     </>
   )

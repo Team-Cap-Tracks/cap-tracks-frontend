@@ -8,6 +8,7 @@ const StationDetails = (props) => {
     <>
       <h1>StationDetails</h1>
       <StationDetailsCard
+        stationInfo={location}
       />
     </>
   )
