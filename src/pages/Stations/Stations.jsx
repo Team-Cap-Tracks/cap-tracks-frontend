@@ -3,7 +3,6 @@ import styles from '../StationDetails/StationDetails'
 
 const StationsList = (props) => {
   let location = useLocation()
-  console.log(location)
   return (
     <>
       <h1  className={styles.station}>Stations</h1>
