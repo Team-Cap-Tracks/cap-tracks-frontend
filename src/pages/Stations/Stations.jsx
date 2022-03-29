@@ -1,5 +1,5 @@
 import { Link, useLocation } from 'react-router-dom'
-import styles from '../StationDetails/StationDetails'
+import styles from '../Stations/Stations.module.css'
 
 const StationsList = (props) => {
   let location = useLocation()
