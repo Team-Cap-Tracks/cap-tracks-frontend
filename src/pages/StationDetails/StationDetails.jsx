@@ -4,7 +4,6 @@ import styles from './StationDetails.module.css'
 
 const StationDetails = (props) => {
   let location = useLocation()
-  console.log('stationdeets', location);
   return (
     <>
       <h1 className={styles.station}>Station Details</h1>
