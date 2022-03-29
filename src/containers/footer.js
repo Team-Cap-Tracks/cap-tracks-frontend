@@ -11,19 +11,25 @@ export function FooterContainer() {
             <Footer.Title>Team Members</Footer.Title>
             <a 
               className='footerlink' 
-              href='https://www.linkedin.com/in/codygravley/'>
+              href='https://www.linkedin.com/in/codygravley/'
+              target='_blank' 
+              rel='noreferrer'>
               <i className="bi bi-emoji-smile"></i> 
               Cody
             </a>
             <a 
               className='footerlink' 
-              href='https://www.linkedin.com/in/christine-davis-808/'>
+              href='https://www.linkedin.com/in/christine-davis-808/'
+              target='_blank' 
+              rel='noreferrer'>
               <i className="bi bi-incognito"></i> 
               Christine
             </a>
             <a 
               className='footerlink' 
-              href='https://www.linkedin.com/in/caleb-vietinghoff/'>
+              href='https://www.linkedin.com/in/caleb-vietinghoff/'
+              target='_blank' 
+              rel='noreferrer'>
               <i className="bi bi-emoji-smile"></i> 
               Caleb
             </a>
