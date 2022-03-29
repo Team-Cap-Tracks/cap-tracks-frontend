@@ -5,7 +5,6 @@ import styles from './StationDetails.module.css'
 
 const StationDetails = ({timeTables}) => {
   let location = useLocation()
-  // console.log(timeTables);
   return (
     <>
       <h1 className={styles.station}>Station Details</h1>
