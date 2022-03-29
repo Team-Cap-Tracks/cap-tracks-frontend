@@ -13,32 +13,28 @@ export function FooterContainer() {
               href='https://www.linkedin.com/in/codygravley/'
               target='_blank' 
               rel='noreferrer'>
-              <i className="bi bi-emoji-smile"></i> 
-              Cody
+              <i className="bi bi-emoji-smile"></i> Cody
             </a>
             <a 
               className='footerlink' 
               href='https://www.linkedin.com/in/christine-davis-808/'
               target='_blank' 
               rel='noreferrer'>
-              <i className="bi bi-incognito"></i> 
-              Christine
+              <i className="bi bi-incognito"></i> Christine
             </a>
             <a 
               className='footerlink' 
               href='https://www.linkedin.com/in/caleb-vietinghoff/'
               target='_blank' 
               rel='noreferrer'>
-              <i className="bi bi-emoji-smile"></i> 
-              Caleb
+              <i class="bi bi-robot"></i> Caleb
             </a>
             <a 
               className="footerlink" 
               href='https://www.linkedin.com/in/marcus-lindbloom/' 
               target='_blank' 
               rel='noreferrer'>
-              <i className="bi bi-emoji-sunglasses">
-              </i> Marcus
+              <i className="bi bi-emoji-sunglasses"></i> Marcus
             </a>
           </Footer.Column>
           <Footer.Column>
