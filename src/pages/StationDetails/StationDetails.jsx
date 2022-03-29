@@ -1,5 +1,6 @@
 import { useLocation } from "react-router-dom";
 import StationDetailsCard from '../../components/StationDetailsCard/StationDetailsCard'
+import 
 import styles from './StationDetails.module.css'
 
 const StationDetails = ({timeTables}) => {
