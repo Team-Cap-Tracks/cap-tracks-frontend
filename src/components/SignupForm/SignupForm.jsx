@@ -58,7 +58,7 @@ const SignupForm = props => {
         />
       </div>
       <div className='form-group'>
-        <label htmlFor="email" className={styles.label}><i className="bi bi-envelope"></i> Email</label>
+        <label htmlFor="email" className={styles.label}>Email</label>
         <input
           type="text"
           class='form-control'
