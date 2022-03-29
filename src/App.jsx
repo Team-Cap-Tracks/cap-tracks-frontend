@@ -10,6 +10,7 @@ import Lines from './pages/Lines/Lines'
 import StationsList from './pages/Stations/Stations'
 import * as authService from './services/authService'
 import * as lineService from './services/Lines'
+import * as timeTableService from './services/TimeTables'
 import { FooterContainer } from './containers/footer'
 import StationDetails from './pages/StationDetails/StationDetails.jsx'
 
@@ -28,7 +29,7 @@ const App = () => {
   }, [])
 
   useEffect(() => {
-    
+
   })
 
   const handleLogout = () => {
