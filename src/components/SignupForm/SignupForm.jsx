@@ -38,26 +38,31 @@ const SignupForm = props => {
   }
 
   return (
+    <>
     <form
       autoComplete="off"
       onSubmit={handleSubmit}
       className={styles.container}
     >
-      <div className={styles.inputContainer}>
+      <div className='form-group'>
         <label htmlFor="name" className={styles.label}>Name</label>
         <input
           type="text"
           autoComplete="off"
           id="name"
           value={name}
+          class='form-control'
+          placeholder="Name"
           name="name"
           onChange={handleChange}
         />
       </div>
-      <div className={styles.inputContainer}>
-        <label htmlFor="email" className={styles.label}>Email</label>
+      <div className='form-group'>
+        <label htmlFor="email" className={styles.label}><i className="bi bi-envelope"></i> Email</label>
         <input
           type="text"
+          class='form-control'
+          placeholder="Email"
           autoComplete="off"
           id="email"
           value={email}
@@ -65,18 +70,20 @@ const SignupForm = props => {
           onChange={handleChange}
         />
       </div>
-      <div className={styles.inputContainer}>
+      <div className='form-group'>
         <label htmlFor="password" className={styles.label}>Password</label>
         <input
           type="password"
           autoComplete="off"
+          class='form-control'
           id="password"
+          placeholder='Password'
           value={password}
           name="password"
           onChange={handleChange}
         />
       </div>
-      <div className={styles.inputContainer}>
+      <div className=''>
         <label htmlFor="confirm" className={styles.label}>
           Confirm Password
         </label>
@@ -102,6 +109,7 @@ const SignupForm = props => {
         </Link>
       </div>
     </form>
+    </>
   )
 }
 
