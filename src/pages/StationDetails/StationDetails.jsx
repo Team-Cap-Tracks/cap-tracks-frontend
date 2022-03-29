@@ -4,8 +4,7 @@ import styles from './StationDetails.module.css'
 
 const StationDetails = ({timeTables}) => {
   let location = useLocation()
-  // console.log(location)
-  console.log(timeTables[0].StationTimes);
+
   return (
     <>
       <h1 className={styles.station}>Station Details</h1>
