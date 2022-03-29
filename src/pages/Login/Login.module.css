@@ -4,12 +4,6 @@
   flex-direction: column;
 }
 
-input {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-}
-
 .login {
   margin-top: 15px;
   font-family: "Poppins";
