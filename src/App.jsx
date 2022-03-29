@@ -39,38 +39,40 @@ const App = () => {
   return (
     <>
       <NavBar user={user} handleLogout={handleLogout} />
-      <Routes>
-        <Route path="/" element={<Landing user={user} />} />
-        <Route
-          path="/signup"
-          element={<Signup handleSignupOrLogin={handleSignupOrLogin} />}
-        />
-        <Route
-          path="/login"
-          element={<Login handleSignupOrLogin={handleSignupOrLogin} />}
-        />
-        <Route
-          path="/profiles"
-          element={user ? <Profiles 
-          user={user} handleLogout={handleLogout} />
-          : 
-          <Navigate to="/" />}
-        />
-        <Route
-          path="/changePassword"
-          element={user ? <ChangePassword handleSignupOrLogin={handleSignupOrLogin}/> : <Navigate to="/login" />}
-        />
-        <Route path='/lines' 
-          element={<Lines 
-          lines={lines}
-        />} />
-        <Route path='/stations' 
-          element={<StationsList />}
-        />
-        <Route path='/station-details' 
-          element={<StationDetails />}
-        />
-      </Routes>
+      <div className='content'>
+        <Routes>
+          <Route path="/" element={<Landing user={user} />} />
+          <Route
+            path="/signup"
+            element={<Signup handleSignupOrLogin={handleSignupOrLogin} />}
+          />
+          <Route
+            path="/login"
+            element={<Login handleSignupOrLogin={handleSignupOrLogin} />}
+          />
+          <Route
+            path="/profiles"
+            element={user ? <Profiles 
+            user={user} handleLogout={handleLogout} />
+            : 
+            <Navigate to="/" />}
+          />
+          <Route
+            path="/changePassword"
+            element={user ? <ChangePassword handleSignupOrLogin={handleSignupOrLogin}/> : <Navigate to="/login" />}
+          />
+          <Route path='/lines' 
+            element={<Lines 
+            lines={lines}
+          />} />
+          <Route path='/stations' 
+            element={<StationsList />}
+          />
+          <Route path='/station-details' 
+            element={<StationDetails />}
+          />
+        </Routes>
+      </div>
       <FooterContainer
       />
     </>
