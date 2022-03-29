@@ -29,8 +29,9 @@ const App = () => {
   }, [])
 
   useEffect(() => {
-
-  })
+    timeTableService.getAllTimes()
+    .then(allTimeTables => setTimeTables(allTimeTables))
+  }, [])
 
   const handleLogout = () => {
     authService.logout()
