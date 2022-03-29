@@ -10,9 +10,20 @@ export function FooterContainer() {
           <Footer.Column>
             <Footer.Title>Team Members</Footer.Title>
             <Footer.Link href="#"><i className="bi bi-emoji-smile"></i> Cody</Footer.Link>
-            <Footer.Link href="#"><i className="bi bi-incognito"></i> Christine</Footer.Link>
+            <a 
+              className='footerlink' 
+              href='https://www.linkedin.com/in/christine-davis-808/'>
+              <i className="bi bi-incognito"></i> 
+              Cody
+            </a>
+            <a 
+              className='footerlink' 
+              href='https://www.linkedin.com/in/christine-davis-808/'>
+              <i className="bi bi-incognito"></i> 
+              Christine
+            </a>
             <Footer.Link href="#"><i className="bi bi-robot"></i> Caleb</Footer.Link>
-            <a href='https://www.linkedin.com/in/marcus-lindbloom/' target='_blank' rel='noreferrer'>Marcus<i className="bi bi-emoji-sunglasses"></i></a>
+            <a className="footerlink" href='https://www.linkedin.com/in/marcus-lindbloom/' target='_blank' rel='noreferrer'><i className="bi bi-emoji-sunglasses"></i> Marcus</a>
           </Footer.Column>
           <Footer.Column>
             <Footer.Title>What goes here?</Footer.Title>
