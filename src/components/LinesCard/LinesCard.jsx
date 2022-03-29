@@ -1,5 +1,4 @@
 const LinesCard = (props) => {
-  console.log(props);
   return (
     <>
       <div className="linecard" style={props.lines.line === 'red' ? {backgroundColor: '#f74848'} : {backgroundColor: props.lines.line}}>

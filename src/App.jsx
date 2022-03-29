@@ -72,10 +72,10 @@ const App = () => {
           lines={lines}
         />} />
         <Route path='/stations' 
-          element={<StationsList />}
+          element={<StationsList timeTables={timeTables}/>}
         />
         <Route path='/station-details' 
-          element={<StationDetails timeTables={timeTables} />}
+          element={<StationDetails  />}
         />
       </Routes>
       <FooterContainer

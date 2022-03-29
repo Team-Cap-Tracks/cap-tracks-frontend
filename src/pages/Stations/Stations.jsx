@@ -2,6 +2,7 @@ import { Link, useLocation } from 'react-router-dom'
 import styles from '../StationDetails/StationDetails'
 
 const StationsList = (props) => {
+  console.log(props);
   let location = useLocation()
   return (
     <>
