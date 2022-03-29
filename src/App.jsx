@@ -10,6 +10,7 @@ import Lines from './pages/Lines/Lines'
 import StationsList from './pages/Stations/Stations'
 import * as authService from './services/authService'
 import * as lineService from './services/Lines'
+import * as timeTableService from './services/TimeTables'
 import { FooterContainer } from './containers/footer'
 import StationDetails from './pages/StationDetails/StationDetails.jsx'
 
@@ -18,12 +19,18 @@ import "./App.css"
 
 const App = () => {
   const [lines, setLines] = useState([])
+  const [timeTables, setTimeTables] = useState([])
   const [user, setUser] = useState(authService.getUser())
   const navigate = useNavigate()
 
   useEffect(() => {
     lineService.getAll()
     .then(allLines => setLines(allLines))
+  }, [])
+
+  useEffect(() => {
+    timeTableService.getAllTimes()
+    .then(allTimeTables => setTimeTables(allTimeTables))
   }, [])
 
   const handleLogout = () => {
@@ -68,7 +75,7 @@ const App = () => {
           element={<StationsList />}
         />
         <Route path='/station-details' 
-          element={<StationDetails />}
+          element={<StationDetails timeTables={timeTables} />}
         />
       </Routes>
       <FooterContainer
