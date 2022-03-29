@@ -1,6 +1,5 @@
 import React from "react";
 import Footer from '../components/Footer'
-import { Link, Navigate } from 'react-router-dom'
 
 export function FooterContainer() {
   return(
