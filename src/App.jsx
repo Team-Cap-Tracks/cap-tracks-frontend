@@ -18,6 +18,7 @@ import "./App.css"
 
 const App = () => {
   const [lines, setLines] = useState([])
+  const [timeTables, setTimeTables] = useState([])
   const [user, setUser] = useState(authService.getUser())
   const navigate = useNavigate()
 
@@ -25,6 +26,10 @@ const App = () => {
     lineService.getAll()
     .then(allLines => setLines(allLines))
   }, [])
+
+  useEffect(() => {
+    
+  })
 
   const handleLogout = () => {
     authService.logout()
