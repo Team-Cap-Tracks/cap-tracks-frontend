@@ -8,7 +8,7 @@
 
 .label {
   margin-right: 0.5rem;
-  margin-top: ;
+  margin-top: .75rem;
 }
 
 .button {
@@ -34,6 +34,12 @@
   transition: 0.2s;
   transition-timing-function: ease-in-out;
   font-weight: bold;
+}
+
+.link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .inputContainer {
