@@ -3,6 +3,7 @@ import StationDetailsCard from '../../components/StationDetailsCard/StationDetai
 import styles from './StationDetails.module.css'
 
 const StationDetails = (props) => {
+  console.log(props)
   let location = useLocation()
   return (
     <>

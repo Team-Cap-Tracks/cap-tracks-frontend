@@ -1,7 +1,6 @@
 import styles from './StationDetailsCard.module.css'
 
 const StationDetailsCard = (props) => {
-  console.log('Card', props.stationInfo.state.stationList);
 
   return (
     <>
