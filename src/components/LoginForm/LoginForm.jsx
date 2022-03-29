@@ -40,7 +40,6 @@ const LoginForm = props => {
           class='form-control'
           id="email"
           value={formData.email}
-          placeholder="Email"
           name="email"
           onChange={handleChange}
         />
@@ -50,7 +49,6 @@ const LoginForm = props => {
         <input
           type="password"
           autoComplete="off"
-          placeholder="Enter your password"
           id="password"
           class='form-control'
           value={formData.pw}
