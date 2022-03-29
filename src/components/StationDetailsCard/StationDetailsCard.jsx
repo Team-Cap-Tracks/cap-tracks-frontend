@@ -12,7 +12,6 @@ const StationDetailsCard = (props) => {
           {props.stationInfo.state.stationList.Address.State}<br />
           {props.stationInfo.state.stationList.Address.Street}<br />
           {props.stationInfo.state.stationList.Address.Zip}<br />
-
         </p>
       </div>
       </div>
