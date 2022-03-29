@@ -8,6 +8,7 @@
 
 .label {
   margin-right: .5rem;
+  margin-top: .75rem;
 }
 
 .inputContainer {
@@ -17,30 +18,27 @@
 .link {
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 .button {
-  margin-right: .5rem;
-  background-color: #bae8e8;
+  background-color: #555373;
+  color: #F1EDFF !important;
   cursor: pointer;
-  transition: 0.2s;
-  transition-timing-function: ease-in-out;
   border: none;
-  margin: 5px;
+  margin: 15px 10px 10px 10px;
   padding: 15px;
   border-radius: 8px;
   text-decoration: none;
-  color: rgb(39, 38, 67);
   font-family: "Poppins";
   font-weight: bold;
 }
 
 .button:hover {
-  background-color: #e3f6f5;
-  color: rgb(39, 38, 67);
+  background-color: #F1EDFF;
+  color: #555373 !important;
   text-decoration: none;
-  transition: 0.2s;
-  transition-timing-function: ease-in-out;
+  transition: 0.2s ease-in-out;
   font-weight: bold;
 }
 

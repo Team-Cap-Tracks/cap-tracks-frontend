@@ -4,16 +4,10 @@
   flex-direction: column;
 }
 
-input {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-}
-
 .login {
   margin-top: 15px;
   font-family: "Poppins";
   color: rgb(39, 38, 67);
-  font-size: 30px;
+  font-size: 35px;
   font-weight: bold;
 }
