@@ -83,7 +83,7 @@ const SignupForm = props => {
           onChange={handleChange}
         />
       </div>
-      <div className=''>
+      <div className='form-group'>
         <label htmlFor="confirm" className={styles.label}>
           Confirm Password
         </label>
@@ -91,6 +91,8 @@ const SignupForm = props => {
           type="password"
           autoComplete="off"
           id="confirm"
+          class='form-control'
+          placeholder='Confirm Password'
           value={passwordConf}
           name="passwordConf"
           onChange={handleChange}
@@ -103,7 +105,7 @@ const SignupForm = props => {
         <Link to="/">
           <button className={styles.button}>Cancel</button>
         </Link>
-        <br></br>
+        <br/>
         <Link to="/login">
           <a className={styles.link}>Back to login page</a>
         </Link>
