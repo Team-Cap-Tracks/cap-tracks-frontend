@@ -33,6 +33,7 @@ const TimeTable = (props) => {
       {/* First Trains */}
       <p>First Trains: {schedule?.Sunday?.FirstTrains[0]?.Time} am from {schedule?.Sunday?.FirstTrains[0]?.DestinationStation} {schedule?.Sunday?.FirstTrains[1]?.DestinationStation} {schedule?.Sunday?.FirstTrains[2]?.DestinationStation} {schedule?.Sunday?.FirstTrains[3]?.DestinationStation} {schedule?.Monday?.FirstTrains[4]?.DestinationStation}</p>
       {/* Last Trains */}
+      <p>Last Trains: {schedule?.Sunday?.LastTrains[0]?.Time} am from {schedule?.Sunday?.LastTrains[0]?.DestinationStation} {schedule?.Sunday?.LastTrains[1]?.DestinationStation} {schedule?.Sunday?.LastTrains[2]?.DestinationStation} {schedule?.Sunday?.LastTrains[3]?.DestinationStation} {schedule?.Sunday?.LastTrains[4]?.DestinationStation}</p>
     </>
   )
 }
