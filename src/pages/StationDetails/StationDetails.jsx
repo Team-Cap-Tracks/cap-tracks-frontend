@@ -9,6 +9,7 @@ const StationDetails = ({timeTables}) => {
   let location = useLocation()
   let { code } = useParams()
   console.log(code);
+  console.log(timeTables)
 
   useEffect(() => {
     stationTimings.getAllTimes(code)
