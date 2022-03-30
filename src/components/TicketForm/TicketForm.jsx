@@ -16,6 +16,7 @@ const TicketForm = ({lines}) => {
     const lineChange = (event) => {
         if (event.target.value) {
             setSelectedLine(event.target.value)
+            console.log(event.target.value);
         }
     }
 
@@ -25,11 +26,13 @@ const TicketForm = ({lines}) => {
         })
     }, [])
 
+    
+
   return (
     <>
         <div>Ticket Form</div>
         <form>
-            <select className="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
+            <select onChange={lineChange} className="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
                 Origin: 
                 {lines.map(lines => { 
                     return (
@@ -39,15 +42,14 @@ const TicketForm = ({lines}) => {
             </select>
             {selectedLine ? 
             <select className="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
-                 {lines[selectedLine].map(allStations => {
-                    
+                {lines[selectedLine].map(allStations => {
+                    return <option>{allStations}</option>
                 })}
                 
             </select>
             :
             <select className="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
 
-                <option>waddup</option>
             </select>
 }
             <select className="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
