@@ -15,12 +15,18 @@ const TicketForm = ({lines}) => {
                 })}
             </select>
             <select className="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
+                
+            </select>
+            <select className="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
                 Destination:
                 {lines.map(lines => { 
                     return (
                         <option>{lines.line}</option>
                     )
                 })}
+            </select>
+            <select className="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
+                
             </select>
             <button>Create Ticket</button>
         </form>
