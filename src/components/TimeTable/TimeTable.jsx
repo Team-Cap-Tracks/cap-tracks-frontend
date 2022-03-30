@@ -16,7 +16,7 @@ const TimeTable = (props) => {
     <>
       <h1>Station Schedule</h1>
       <p>Monday - Friday: Opens at {schedule?.Monday?.OpeningTime} am</p>
-      <p>First Trains: {schedule?.Monday?.FirstTrains[0]?.Time} am from {schedule?.Monday?.FirstTrains[0]?.DestinationStation}, {schedule?.Monday?.FirstTrains[1]?.DestinationStation}, {schedule?.Monday?.FirstTrains[2]?.DestinationStation}, {schedule?.Monday?.FirstTrains[3]?.DestinationStation}, {schedule?.Monday?.FirstTrains[4]?.DestinationStation}</p>
+      <p>First Trains: {schedule?.Monday?.FirstTrains[0]?.Time} am from {schedule?.Monday?.FirstTrains[0]?.DestinationStation} {schedule?.Monday?.FirstTrains[1]?.DestinationStation} {schedule?.Monday?.FirstTrains[2]?.DestinationStation} {schedule?.Monday?.FirstTrains[3]?.DestinationStation} {schedule?.Monday?.FirstTrains[4]?.DestinationStation}</p>
       {/* <p>First Trains: {schedule?.Monday?.FirstTrains[0]?.Time} am from {schedule?.Monday?.FirstTrains[1]?.DestinationStation}</p>
       <p>First Trains: {schedule?.Monday?.FirstTrains[0]?.Time} am from {schedule?.Monday?.FirstTrains[2]?.DestinationStation}</p>
       <p>First Trains: {schedule?.Monday?.FirstTrains[0]?.Time} am from {schedule?.Monday?.FirstTrains[3]?.DestinationStation}</p>
