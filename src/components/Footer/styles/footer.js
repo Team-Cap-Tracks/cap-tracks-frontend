@@ -2,8 +2,7 @@ import styled from 'styled-components'
 
 export const Container = styled.div`
   padding: 30px 30px;
-  background: #272643;
-  margin-top: auto;
+  background: #272643
 `
 export const Wrapper = styled.div`
   display: flex;
