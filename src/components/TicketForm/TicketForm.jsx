@@ -21,7 +21,9 @@ const TicketForm = ({lines}) => {
     }
 
     function handleStationSelect(event) {
-        
+        console.log('Selected station', event.target.value);
+        const stationSel = event.target.value
+        setSelectedStation(stationSel)
     }
 
 
