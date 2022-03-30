@@ -52,7 +52,6 @@ const SignupForm = props => {
           id="name"
           value={name}
           class='form-control'
-          placeholder="Name"
           name="name"
           onChange={handleChange}
         />
@@ -62,7 +61,6 @@ const SignupForm = props => {
         <input
           type="text"
           class='form-control'
-          placeholder="Email"
           autoComplete="off"
           id="email"
           value={email}
@@ -77,7 +75,6 @@ const SignupForm = props => {
           autoComplete="off"
           class='form-control'
           id="password"
-          placeholder='Password'
           value={password}
           name="password"
           onChange={handleChange}
@@ -92,7 +89,6 @@ const SignupForm = props => {
           autoComplete="off"
           id="confirm"
           class='form-control'
-          placeholder='Confirm Password'
           value={passwordConf}
           name="passwordConf"
           onChange={handleChange}

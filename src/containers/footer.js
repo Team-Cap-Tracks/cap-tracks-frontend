@@ -8,10 +8,34 @@ export function FooterContainer() {
         <Footer.Row>
           <Footer.Column>
             <Footer.Title>Team Members</Footer.Title>
-            <Footer.Link href="#"><i className="bi bi-emoji-smile"></i> Cody</Footer.Link>
-            <Footer.Link href="#"><i className="bi bi-incognito"></i> Christine</Footer.Link>
-            <Footer.Link href="#"><i className="bi bi-robot"></i> Caleb</Footer.Link>
-            <Footer.Link href="https://www.linkedin.com/in/marcus-lindbloom/" target="_blank" rel="noopener noreferrer"><i className="bi bi-emoji-sunglasses"></i> Marcus</Footer.Link>
+            <a 
+              className='footerlink' 
+              href='https://www.linkedin.com/in/codygravley/'
+              target='_blank' 
+              rel='noreferrer'>
+              <i className="bi bi-emoji-smile"></i> Cody
+            </a>
+            <a 
+              className='footerlink' 
+              href='https://www.linkedin.com/in/christine-davis-808/'
+              target='_blank' 
+              rel='noreferrer'>
+              <i className="bi bi-incognito"></i> Christine
+            </a>
+            <a 
+              className='footerlink' 
+              href='https://www.linkedin.com/in/caleb-vietinghoff/'
+              target='_blank' 
+              rel='noreferrer'>
+              <i class="bi bi-robot"></i> Caleb
+            </a>
+            <a 
+              className="footerlink" 
+              href='https://www.linkedin.com/in/marcus-lindbloom/' 
+              target='_blank' 
+              rel='noreferrer'>
+              <i className="bi bi-emoji-sunglasses"></i> Marcus
+            </a>
           </Footer.Column>
           <Footer.Column>
             <Footer.Title>What goes here?</Footer.Title>
@@ -19,6 +43,7 @@ export function FooterContainer() {
             <Footer.Link href="#">Confessions?</Footer.Link>
             <Footer.Link href="#">More info about us?</Footer.Link>
             <Footer.Link href="#">Who knows</Footer.Link>
+            
           </Footer.Column>
           <Footer.Column>
             <Footer.Title>Contact Us</Footer.Title>
@@ -26,11 +51,10 @@ export function FooterContainer() {
             <Footer.Info href="#"><i className="bi bi-envelope"></i> email@gmail.com</Footer.Info>
             <Footer.Info href="#"><i className="bi bi-building"></i> 509 7th St NW</Footer.Info>
             <Footer.Info href="#"><i className="bi bi-twitter"></i> @GA
-</Footer.Info>
+            </Footer.Info>
           </Footer.Column>
         </Footer.Row>
       </Footer.Wrapper>
     </Footer>
-
   )
 }

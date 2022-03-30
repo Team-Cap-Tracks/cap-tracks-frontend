@@ -59,9 +59,24 @@ a {
   text-decoration: none !important;
 }
 
-body {
-  display: flex;
-  flex-direction: column;
+.footerlink {
+  color: #fff;
+  margin-bottom: 15px;
+  font-size: 16px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.footerlink:hover {
+  transition: all 0.2s ease-in-out;
+  color: #0d6efd;
+}
+
+
+.content {
+  /* display: flex;
+  flex-direction: column; */
   min-height: 100vh;
 }
 
