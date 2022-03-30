@@ -1,6 +1,7 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 const TicketForm = ({lines}) => {
+    const [formLine, setFormLine] = useState('')
     console.log(lines)
   return (
     <>
