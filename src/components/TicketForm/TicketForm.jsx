@@ -6,13 +6,7 @@ const TicketForm = ({lines}) => {
     const [selectedLine, setSelectedLine] = useState('')
     const [selectedStation, setSelectedStation] = useState('')
 
-    const checkInsertInArray = newLine => {
-        let findStatus = currentLine.find(x => {
-            return x === newLine
-        })
-        if (!findStatus)
-            setCurrentLine([currentLine, setCurrentLine])
-    }
+    
 
     const lineChange = (event) => {
         if (event.target.value) {
