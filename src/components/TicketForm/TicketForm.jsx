@@ -8,7 +8,7 @@ const TicketForm = ({lines}) => {
 
     const lineList = lines.map(line => ({
        name: line.line,
-       stations: line.Stations
+       stations: line.Stations[0].Name
     }))
     console.log(lineList);
 
@@ -59,7 +59,7 @@ const TicketForm = ({lines}) => {
             >
                 <option value=''>Select the Station</option>
                 {lineList.map((stations, key) => (
-                    <option key={key} ></option>
+                    <option key={key}>{stations.stations}</option>
                 ))}
             </select>
             <button>Create Ticket</button>
