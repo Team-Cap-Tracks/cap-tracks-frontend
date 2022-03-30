@@ -1,15 +1,22 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 
 
 const TicketForm = ({lines}) => {
     const [formLine, setFormLine] = useState([''])
     const [selectedLine, setSelectedLine] = useState('')
 
-const lineChange = (event) => {
-    if (event.target.value) {
-        setSelectedLine(event.target.value)
+    const lineChange = (event) => {
+        if (event.target.value) {
+            setSelectedLine(event.target.value)
+        }
     }
-}
+
+    useEffect(() => {
+        Object.keys(lines).forEach(line => {
+            
+        })
+    })
+
   return (
     <>
         <div>Ticket Form</div>
