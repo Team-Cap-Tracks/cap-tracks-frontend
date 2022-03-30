@@ -8,10 +8,10 @@ const TimeTable = (props) => {
 
   useEffect(() => {
     stationTimings.getAllTimes(code)
-    .then(res => console.log(res))
-  })
+    .then(res => setSchedule(res.StationTimes[0].Monday.OpeningTime))
+  }, [])
 
-  console.log(props)
+  console.log("Scheduling", schedule)
   return (
     <>
       <h1>Station Schedule</h1>
