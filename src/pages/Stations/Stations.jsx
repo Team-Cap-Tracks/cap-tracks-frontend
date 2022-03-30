@@ -10,7 +10,7 @@ const StationsList = (props) => {
         return (
           <>
             <Link 
-              to='/station-details'
+              to={`/station-details/${stationList.Code}`}
               key={stationList.Code}
               state={{stationList}}
             >
