@@ -24,8 +24,9 @@ const TimeTable = (props) => {
       {/* Saturday */}
       <h2>Saturday: Opens at {schedule?.Saturday?.OpeningTime} am</h2>
       {/* First Trains */}
-      <p>{schedule?.Saturday?.FirstTrains[0]?.Time} am from {schedule?.Saturday?.FirstTrains[0]?.DestinationStation} {schedule?.Saturday?.FirstTrains[1]?.DestinationStation} {schedule?.Saturday?.FirstTrains[2]?.DestinationStation} {schedule?.Saturday?.FirstTrains[3]?.DestinationStation} {schedule?.Saturday?.FirstTrains[4]?.DestinationStation}</p>
+      <p>First Trains: {schedule?.Saturday?.FirstTrains[0]?.Time} am from {schedule?.Saturday?.FirstTrains[0]?.DestinationStation} {schedule?.Saturday?.FirstTrains[1]?.DestinationStation} {schedule?.Saturday?.FirstTrains[2]?.DestinationStation} {schedule?.Saturday?.FirstTrains[3]?.DestinationStation} {schedule?.Saturday?.FirstTrains[4]?.DestinationStation}</p>
       {/* Last Trains */}
+      <p>Last Trains: {schedule?.Saturday?.LastTrains[0]?.Time} am from {schedule?.Saturday?.LastTrains[0]?.DestinationStation} {schedule?.Saturday?.LastTrains[1]?.DestinationStation} {schedule?.Saturday?.LastTrains[2]?.DestinationStation} {schedule?.Saturday?.LastTrains[3]?.DestinationStation} {schedule?.Saturday?.LastTrains[4]?.DestinationStation}</p>
 
       {/* Sunday */}
       <h2>Sunday: Opens at {schedule?.Sunday?.OpeningTime} am</h2>
