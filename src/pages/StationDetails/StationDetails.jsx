@@ -8,7 +8,6 @@ import * as stationTimings from '../../services/TimeTables'
 const StationDetails = ({timeTables}) => {
   let location = useLocation()
   let { code } = useParams()
-  console.log(code);
 
   useEffect(() => {
     stationTimings.getAllTimes(code)

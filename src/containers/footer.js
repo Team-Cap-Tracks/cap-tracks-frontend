@@ -27,7 +27,7 @@ export function FooterContainer() {
               href='https://www.linkedin.com/in/caleb-vietinghoff/'
               target='_blank' 
               rel='noreferrer'>
-              <i class="bi bi-robot"></i> Caleb
+              <i className="bi bi-robot"></i> Caleb
             </a>
             <a 
               className="footerlink" 
