@@ -11,7 +11,7 @@ const StationDetails = ({timeTables}) => {
 
   useEffect(() => {
     stationTimings.getAllTimes(code)
-    .then(res => console.log(res)) 
+    .then(res => console.log("Test", res.json()))
   })
 
   return (
@@ -19,7 +19,7 @@ const StationDetails = ({timeTables}) => {
       <h1 className={styles.station}>Station Details</h1>
       <StationDetailsCard className={styles.stationdetails}
         stationInfo={location}/>
-      <TimeTable state={{stationTimings}} />
+      <TimeTable state={{timeTables}} />
     </>
 
   )
