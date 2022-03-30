@@ -43,6 +43,14 @@ const TicketForm = ({lines}) => {
                     
                 ))}
             </select>
+            <select 
+            name='Stations' 
+            onChange={event => handleStationSelect(event)}
+            value={selectedStation}
+            >
+                <option value=''></option>
+
+            </select>
 
             <button>Create Ticket</button>
         </form>
