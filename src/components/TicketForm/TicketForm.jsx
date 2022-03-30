@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react'
 
 
 const TicketForm = ({lines}) => {
-    const [currentLine, setCurrentLine ] = useState(['red'])
+    const [currentLine, setCurrentLine ] = useState([''])
     const [selectedLine, setSelectedLine] = useState('')
 
     const checkInsertInArray = newLine => {
@@ -23,7 +23,7 @@ const TicketForm = ({lines}) => {
         Object.keys(lines).forEach(line => {
             checkInsertInArray(line)
         })
-    })
+    }, [])
 
   return (
     <>
@@ -33,14 +33,23 @@ const TicketForm = ({lines}) => {
                 Origin: 
                 {lines.map(lines => { 
                     return (
-                        <option >{lines.line}</option>
+                        <option value=''>{lines.line}</option>
                     )
                 })}
             </select>
-            {}
+            {selectedLine ? 
             <select className="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
-                <option></option>
+                 {lines[selectedLine].map(allStations => {
+                    
+                })}
+                
             </select>
+            :
+            <select className="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
+
+                <option>waddup</option>
+            </select>
+}
             <select className="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
                 Destination:
                 {lines.map(lines => { 
