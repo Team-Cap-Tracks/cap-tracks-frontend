@@ -14,7 +14,7 @@ const TicketForm = ({lines}) => {
     function handleLineSelect(event) {
         console.log('Selected Line', event.target.value)
         const lineSel = event.target.value
-        const stationsSel = lineSel !== '' ? lines[lineSel] : []
+        const stationsSel = lineSel !== '' ? {lines}[lineSel] : []
         setSelectedLine(lineSel)
         setStations(stationsSel)
         setSelectedStation('')
