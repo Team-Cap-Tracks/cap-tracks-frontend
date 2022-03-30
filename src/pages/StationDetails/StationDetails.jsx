@@ -19,7 +19,7 @@ const StationDetails = ({timeTables}) => {
       <h1 className={styles.station}>Station Details</h1>
       <StationDetailsCard className={styles.stationdetails}
         stationInfo={location}/>
-      <TimeTable state={{timeTables}} />
+      <TimeTable state={{stationTimings}} />
     </>
 
   )
