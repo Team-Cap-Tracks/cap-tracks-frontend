@@ -50,8 +50,7 @@ export function FooterContainer() {
             <Footer.Info><i className="bi bi-telephone"> 480-842-9151</i></Footer.Info>
             <Footer.Info href="#"><i className="bi bi-envelope"></i> email@gmail.com</Footer.Info>
             <Footer.Info href="#"><i className="bi bi-building"></i> 509 7th St NW</Footer.Info>
-            <Footer.Info href="#"><i className="bi bi-twitter"></i> @GA
-            </Footer.Info>
+            <Footer.Info href="#"><i className="bi bi-twitter"></i> @GA</Footer.Info>
           </Footer.Column>
         </Footer.Row>
       </Footer.Wrapper>

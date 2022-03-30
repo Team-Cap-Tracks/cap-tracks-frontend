@@ -1,7 +1,8 @@
-.stations {
+.station {
     margin-top: 15px;
     color: #272643;
     font-family: "Poppins";
+    font-weight: bold;
 }
 
 .container {
