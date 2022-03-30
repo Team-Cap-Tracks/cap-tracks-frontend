@@ -12,9 +12,9 @@ const TicketForm = ({lines}) => {
 
     useEffect(() => {
         Object.keys(lines).forEach(line => {
-            
+            lineChange(line)
         })
-    })
+    }, [lines])
 
   return (
     <>
@@ -24,7 +24,7 @@ const TicketForm = ({lines}) => {
                 Origin: 
                 {lines.map(lines => { 
                     return (
-                        <option>{lines.line}</option>
+                        <option >{lines.line}</option>
                     )
                 })}
             </select>
@@ -35,7 +35,7 @@ const TicketForm = ({lines}) => {
                 Destination:
                 {lines.map(lines => { 
                     return (
-                        <option>{lines.line}</option>
+                        <option >{lines.line}</option>
                     )
                 })}
             </select>
