@@ -6,8 +6,8 @@ const TicketForm = ({lines}) => {
     const [selectedLine, setSelectedLine] = useState('')
     const [selectedStation, setSelectedStation] = useState('')
 
-    const lineList = lines.map(key => ({
-       name: key
+    const lineList = lines.map(lines => ({
+       name: lines.line
     }))
     console.log(lineList);
 
@@ -38,10 +38,10 @@ const TicketForm = ({lines}) => {
             aria-label=".form-select-lg example">
                 Origin: 
                 <option value=''>Select the Line</option>
-                {lineList.map((lines, key => (
-                    <option key={key} value={lines.name.line}>{lines.name.line}</option>
+                {lineList.map((lines, key) => (
+                    <option key={lines} value={lines.name}>{lines.name}</option>
                     
-                )))}
+                ))}
             </select>
 
             <button>Create Ticket</button>
