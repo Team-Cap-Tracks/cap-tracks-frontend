@@ -6,7 +6,10 @@ const TicketForm = ({lines}) => {
     const [selectedLine, setSelectedLine] = useState('')
     const [selectedStation, setSelectedStation] = useState('')
 
-    
+    const lineList = lines.line.map(line => {
+       name: line
+    })
+    console.log(lineList);
 
     const lineChange = (event) => {
         if (event.target.value) {
@@ -15,11 +18,7 @@ const TicketForm = ({lines}) => {
         }
     }
 
-    useEffect(() => {
-        Object.keys(lines).forEach(line => {
-            checkInsertInArray(line)
-        })
-    }, [])
+
 
     
 
