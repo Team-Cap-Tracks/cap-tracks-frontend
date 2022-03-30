@@ -20,10 +20,8 @@ const StationsList = (props) => {
         )
       }
       )}
-      
-      
     </>
-)
+  )
 }
 
 export default StationsList
