@@ -29,7 +29,7 @@ const TicketForm = ({lines}) => {
                 })}
             </select>
             <select className="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
-                
+                <option></option>
             </select>
             <select className="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
                 Destination:
