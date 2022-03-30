@@ -21,7 +21,7 @@ const TicketForm = ({lines}) => {
     function handleLineSelect(event) {
         console.log('Selected Line', event.target.value)
         const lineSel = event.target.value
-        const stationsSel = lineSel !== '' ? lines[lineSel] : []
+        const stationsSel = lineSel !== '' ? {lines}[lineSel] : []
         setSelectedLine(lineSel)
         setStations(stationsSel)
         setSelectedStation('')
@@ -59,7 +59,7 @@ const TicketForm = ({lines}) => {
             >
                 <option value=''>Select the Station</option>
                 {lineList.map((lines, idx) => (
-                    <option key={idx}>{lines.stations[idx].Name}</option>
+                    <option key={idx}>{lines.stations.name}</option>
                 ))}
             </select>
             <button>Create Ticket</button>
