@@ -11,6 +11,10 @@ const TicketForm = ({lines}) => {
     }))
     console.log(lineList);
 
+    function handleLineSelect(event) {
+        console.log('Selected Line', e.target.value);
+    }
+
 
 
 
