@@ -12,7 +12,12 @@ const TicketForm = ({lines}) => {
     console.log(lineList);
 
     function handleLineSelect(event) {
-        console.log('Selected Line', e.target.value);
+        console.log('Selected Line', event.target.value)
+        const lineSel = event.target.value
+        const stationsSel = lineSel !== '' ? lines[lineSel] : []
+        setSelectedLine(lineSel)
+        setStations(stationsSel)
+        setSelectedStation('')
     }
 
 
