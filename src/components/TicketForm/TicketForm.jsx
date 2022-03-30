@@ -5,8 +5,8 @@ const TicketForm = () => {
     <>
         <div>Ticket Form</div>
         <form>
-            <select></select>
-            <select></select>
+            <select className="form-select form-select-lg mb-3" aria-label=".form-select-lg example">Origin</select>
+            <select>Destination</select>
         </form>
     </>
   )
