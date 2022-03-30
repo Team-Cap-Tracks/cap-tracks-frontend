@@ -2,8 +2,7 @@ import React, { useState, useEffect } from 'react'
 
 
 const TicketForm = ({lines}) => {
-    const [currentLine, setCurrentLine ] = useState([''])
-    const [selectedLine, setSelectedLine] = useState('')
+    const [stations, setStations] = useState([])
 
     const checkInsertInArray = newLine => {
         let findStatus = currentLine.find(x => {
