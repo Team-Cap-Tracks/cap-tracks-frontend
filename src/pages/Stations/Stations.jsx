@@ -4,9 +4,14 @@ import styles from '../StationDetails/StationDetails'
 const StationsList = (props) => {
   let location = useLocation()
 
+  const lineName = location.state.line.line
+
+  function capitalizeFirstLetter(string) {
+    return string.charAt(0).toUpperCase() + string.slice(1);
+  }
   return (
     <>
-      <h1 className={styles.station}>{location.state.line.line} Line Stations</h1>
+      <h1 className={styles.station}>{capitalizeFirstLetter(lineName)} Line Stations</h1>
       {location.state.line.Stations.map(stationList => {
         return (
           <>
