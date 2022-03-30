@@ -7,12 +7,10 @@ const TicketForm = ({lines}) => {
     const [selectedStation, setSelectedStation] = useState('')
 
     const lineList = lines.map(lines => ({
-       name: lines.line,
-       stations: lines.line.Stations
+       name: lines
+
     }))
-    console.log(lines);
-    // console.log(lineList);
- 
+    console.log(lineList);
 
     function handleLineSelect(event) {
         console.log('Selected Line', event.target.value)
@@ -42,7 +40,7 @@ const TicketForm = ({lines}) => {
                 Origin: 
                 <option value=''>Select the Line</option>
                 {lineList.map((lines, key) => (
-                    <option key={lines.line} value={lines.name}>{lines.name}</option>
+                    <option key={lines.line} value={lines.line.name}>{lines.line.name}</option>
                     
                 ))}
             </select>
