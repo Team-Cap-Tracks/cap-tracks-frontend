@@ -2,67 +2,59 @@ import React, { useState, useEffect } from 'react'
 
 
 const TicketForm = ({lines}) => {
-    const [currentLine, setCurrentLine ] = useState([''])
+    const [stations, setStations] = useState([])
     const [selectedLine, setSelectedLine] = useState('')
+    const [selectedStation, setSelectedStation] = useState('')
 
-    const checkInsertInArray = newLine => {
-        let findStatus = currentLine.find(x => {
-            return x === newLine
-        })
-        if (!findStatus)
-            setCurrentLine([currentLine, setCurrentLine])
+    const lineList = lines.map(lines => ({
+       name: lines.line
+    }))
+    console.log(lineList);
+
+    function handleLineSelect(event) {
+        console.log('Selected Line', event.target.value)
+        const lineSel = event.target.value
+        const stationsSel = lineSel !== '' ? {lines}[lineSel] : []
+        setSelectedLine(lineSel)
+        setStations(stationsSel)
+        setSelectedStation('')
     }
 
-    const lineChange = (event) => {
-        if (event.target.value) {
-            setSelectedLine(event.target.value)
-            console.log(event.target.value);
-        }
+    function handleStationSelect(event) {
+        console.log('Selected station', event.target.value);
+        const stationSel = event.target.value
+        setSelectedStation(stationSel)
     }
-
-    useEffect(() => {
-        Object.keys(lines).forEach(line => {
-            checkInsertInArray(line)
-        })
-    }, [])
-
-    
 
   return (
     <>
         <div>Ticket Form</div>
         <form>
-            <select onChange={lineChange} className="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
+            <select 
+            name='Lines' 
+            onChange={event => handleLineSelect(event)} 
+            value={selectedLine} 
+            className="form-select form-select-lg mb-3" 
+            aria-label=".form-select-lg example">
                 Origin: 
-                {lines.map(lines => { 
-                    return (
-                        <option value=''>{lines.line}</option>
-                    )
-                })}
+                <option value=''>Select the Line</option>
+                {lineList.map((lines, key) => (
+                    <option key={lines} value={lines.name}>{lines.name}</option>
+                    
+                ))}
             </select>
-            {selectedLine ? 
-            <select className="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
-                {lines[selectedLine].map(allStations => {
-                    return <option>{allStations}</option>
-                })}
-                
-            </select>
-            :
-            <select className="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
+            <select 
+            name='Stations' 
+            onChange={event => handleStationSelect(event)}
+            value={selectedStation}
+            className="form-select form-select-lg mb-3" 
+            aria-label=".form-select-lg example"
+            >
+                <option value=''>Select the Station</option>
+
 
             </select>
-}
-            <select className="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
-                Destination:
-                {lines.map(lines => { 
-                    return (
-                        <option >{lines.line}</option>
-                    )
-                })}
-            </select>
-            <select className="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
-                
-            </select>
+
             <button>Create Ticket</button>
         </form>
     </>
