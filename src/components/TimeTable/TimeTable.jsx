@@ -8,15 +8,15 @@ const TimeTable = (props) => {
 
   useEffect(() => {
     stationTimings.getAllTimes(code)
-    .then(monday => setSchedule(monday.StationTimes))
-    // .then(tuesday => setSchedule(tuesday.StationTimes[0].Tuesday))
+    .then(res => setSchedule(res.StationTimes[0].Monday))
   }, [])
 
   console.log("Scheduling", schedule)
   return (
     <>
       <h1>Station Schedule</h1>
-      <p>{schedule[0].Monday.OpeningTime}</p>
+      <p>Monday - Friday: {schedule.OpeningTime}</p>
+      <p>Monday - Friday: {schedule.OpeningTime}</p>
     </>
 
   )
