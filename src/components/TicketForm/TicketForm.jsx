@@ -1,8 +1,10 @@
 import React, { useState } from 'react'
+import { useState } from 'react/cjs/react.production.min'
 
 const TicketForm = ({lines}) => {
-    const [formLine, setFormLine] = useState('')
-    console.log(lines)
+    const [formLine, setFormLine] = useState([''])
+    const [selectedLine, setSelectedLine] = useState('')
+
   return (
     <>
         <div>Ticket Form</div>
