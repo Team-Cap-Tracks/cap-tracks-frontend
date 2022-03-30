@@ -6,15 +6,11 @@ const TicketForm = ({lines}) => {
     const [selectedLine, setSelectedLine] = useState('')
     const [selectedStation, setSelectedStation] = useState('')
 
-    let linesArr = {lines}
-
-    // const lineList = lines.map(line => ({
-    //    name: line.line,
-    //    stations: line.Stations
-    // }))
-    // console.log(lineList);
-
-
+    const lineList = lines.map(line => ({
+       name: line.line,
+       stations: line.Stations
+    }))
+    console.log(lineList);
 
     // const stationList = lines.map(station => ({
     //     stations: station.Stations
@@ -50,7 +46,7 @@ const TicketForm = ({lines}) => {
                 Origin: 
                 <option value=''>Select the Line</option>
                 {lineList.map((lines, key) => (
-                    <option key={lines.line} value={lines.name}>{lines.name}</option>
+                    <option key={key} value={lines.name}>{lines.name}</option>
                     
                 ))}
             </select>
@@ -63,7 +59,7 @@ const TicketForm = ({lines}) => {
             >
                 <option value=''>Select the Station</option>
                 {lineList.map((stations, key) => (
-                    <option >{stations.stations}</option>
+                    <option key={key} ></option>
                 ))}
             </select>
             <button>Create Ticket</button>
