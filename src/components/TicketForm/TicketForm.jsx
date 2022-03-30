@@ -2,13 +2,15 @@ import React, { useState, useEffect } from 'react'
 
 
 const TicketForm = ({lines}) => {
-    const [currentLine, setCurrentLine ] = useState('red')
+    const [currentLine, setCurrentLine ] = useState(['red'])
     const [selectedLine, setSelectedLine] = useState('')
 
     const checkInsertInArray = newLine => {
         let findStatus = currentLine.find(x => {
             return x === newLine
         })
+        if (!findStatus)
+            setCurrentLine([currentLine, setCurrentLine])
     }
 
     const lineChange = (event) => {
@@ -19,9 +21,9 @@ const TicketForm = ({lines}) => {
 
     useEffect(() => {
         Object.keys(lines).forEach(line => {
-            lineChange(line)
+            checkInsertInArray(line)
         })
-    }, [lines])
+    })
 
   return (
     <>
@@ -35,6 +37,7 @@ const TicketForm = ({lines}) => {
                     )
                 })}
             </select>
+            {}
             <select className="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
                 <option></option>
             </select>
