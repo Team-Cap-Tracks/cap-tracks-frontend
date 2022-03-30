@@ -26,9 +26,6 @@ const TicketForm = ({lines}) => {
         setSelectedStation(stationSel)
     }
 
-
-
-
   return (
     <>
         <div>Ticket Form</div>
