@@ -11,12 +11,6 @@ const TicketForm = ({lines}) => {
     })
     console.log(lineList);
 
-    const lineChange = (event) => {
-        if (event.target.value) {
-            setSelectedLine(event.target.value)
-            console.log(event.target.value);
-        }
-    }
 
 
 
