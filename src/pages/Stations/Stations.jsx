@@ -14,7 +14,7 @@ const StationsList = (props) => {
               key={stationList.Code}
               state={{stationList}}
             >
-              <h3><strong>{stationList.Name}</strong></h3>
+              <h3 key={stationList.Name}><strong>{stationList.Name}</strong></h3>
             </Link>
           </>
         )
