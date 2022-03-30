@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react'
 
 
 const TicketForm = ({lines}) => {
+    const [currentLine, setCurrentLine ] = useState('red')
     const [selectedLine, setSelectedLine] = useState('')
 
     const lineChange = (event) => {
