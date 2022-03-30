@@ -14,10 +14,7 @@ const TicketForm = ({lines}) => {
     // }))
     // console.log(lineList);
 
-    const lineList = Object.keys(linesArr).map(line => ({
-        name: line.lines.name
-      }));
-      console.log(lineList);
+
 
     // const stationList = lines.map(station => ({
     //     stations: station.Stations
