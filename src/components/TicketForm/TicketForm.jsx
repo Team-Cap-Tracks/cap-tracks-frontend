@@ -5,6 +5,9 @@ const TicketForm = ({lines}) => {
     const [formLine, setFormLine] = useState([''])
     const [selectedLine, setSelectedLine] = useState('')
 
+    function lineChange = event => {
+        if (event.target.value)
+    }
   return (
     <>
         <div>Ticket Form</div>
