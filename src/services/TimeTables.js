@@ -1,7 +1,9 @@
-const BASE_URL = `${process.env.REACT_APP_BACKEND_SERVER_URL}/api/timetables`
+const BASE_URL = `http://localhost:3001/api/timetables/get-times/`
 
-function getAllTimes() {
-  return fetch (BASE_URL)
+const API_KEY = `${process.env.API_KEY}`
+
+function getAllTimes(code) {
+  return fetch (`${BASE_URL}${code}`)
     .then(res => res.json())
 }
 
