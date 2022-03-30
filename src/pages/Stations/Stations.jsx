@@ -3,9 +3,10 @@ import styles from '../StationDetails/StationDetails'
 
 const StationsList = (props) => {
   let location = useLocation()
+
   return (
     <>
-      <h1  className={styles.station}>Stations</h1>
+      <h1 className={styles.station}>{location.state.line.line} Line Stations</h1>
       {location.state.line.Stations.map(stationList => {
         return (
           <>
