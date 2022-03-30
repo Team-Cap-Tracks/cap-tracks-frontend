@@ -8,7 +8,7 @@ const TicketForm = ({lines}) => {
         <form>
             <select className="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
                 Origin: 
-                {lines.map(line => { 
+                {lines.map(lines => { 
                     return (
                         <option>{lines.line}</option>
                     )
