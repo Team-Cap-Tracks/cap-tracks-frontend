@@ -15,11 +15,11 @@ const TimeTable = (props) => {
   return (
     <>
       <h1>Station Schedule</h1>
-      <p>Monday - Friday: Opens at {schedule?.Monday?.OpeningTime}</p>
-      <p>Saturday: Opens at {schedule?.Saturday?.OpeningTime}</p>
-      <p>Sunday: Opens at {schedule?.Sunday?.OpeningTime}</p>
+      <p>Monday - Friday: Opens at {schedule?.Monday?.OpeningTime} am</p>
+      <p>First Trains: {schedule?.Monday?.FirstTrains[0].Time} am from {schedule?.Monday?.FirstTrains[0].DestinationStation}</p>
+      <p>Saturday: Opens at {schedule?.Saturday?.OpeningTime} am</p>
+      <p>Sunday: Opens at {schedule?.Sunday?.OpeningTime} am</p>
     </>
-
   )
 }
 
