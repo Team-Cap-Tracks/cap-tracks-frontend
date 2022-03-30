@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react'
 
 
 const TicketForm = ({lines}) => {
-    const [formLine, setFormLine] = useState([''])
     const [selectedLine, setSelectedLine] = useState('')
 
     const lineChange = (event) => {
