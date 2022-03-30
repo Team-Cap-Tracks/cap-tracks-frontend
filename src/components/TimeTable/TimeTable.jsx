@@ -15,14 +15,15 @@ const TimeTable = (props) => {
   return (
     <>
       <h1>Station Schedule</h1>
-      <p>Monday - Friday: Opens at {schedule?.Monday?.OpeningTime} am</p>
+      <h2>Monday - Friday: Opens at {schedule?.Monday?.OpeningTime} am</h2>
       <p>First Trains: {schedule?.Monday?.FirstTrains[0]?.Time} am from {schedule?.Monday?.FirstTrains[0]?.DestinationStation} {schedule?.Monday?.FirstTrains[1]?.DestinationStation} {schedule?.Monday?.FirstTrains[2]?.DestinationStation} {schedule?.Monday?.FirstTrains[3]?.DestinationStation} {schedule?.Monday?.FirstTrains[4]?.DestinationStation}</p>
       {/* <p>First Trains: {schedule?.Monday?.FirstTrains[0]?.Time} am from {schedule?.Monday?.FirstTrains[1]?.DestinationStation}</p>
       <p>First Trains: {schedule?.Monday?.FirstTrains[0]?.Time} am from {schedule?.Monday?.FirstTrains[2]?.DestinationStation}</p>
       <p>First Trains: {schedule?.Monday?.FirstTrains[0]?.Time} am from {schedule?.Monday?.FirstTrains[3]?.DestinationStation}</p>
       <p>First Trains: {schedule?.Monday?.FirstTrains[0]?.Time} am from {schedule?.Monday?.FirstTrains[4]?.DestinationStation}</p> */}
-      <p>Saturday: Opens at {schedule?.Saturday?.OpeningTime} am</p>
-      <p>Sunday: Opens at {schedule?.Sunday?.OpeningTime} am</p>
+      <h2>Saturday: Opens at {schedule?.Saturday?.OpeningTime} am</h2>
+      <p>{schedule?.Saturday?.FirstTrains[0]?.Time} am from {schedule?.Saturday?.FirstTrains[0]?.DestinationStation} {schedule?.Saturday?.FirstTrains[1]?.DestinationStation} {schedule?.Saturday?.FirstTrains[2]?.DestinationStation} {schedule?.Saturday?.FirstTrains[3]?.DestinationStation} {schedule?.Saturday?.FirstTrains[4]?.DestinationStation}</p>
+      <h2>Sunday: Opens at {schedule?.Sunday?.OpeningTime} am</h2>
     </>
   )
 }
