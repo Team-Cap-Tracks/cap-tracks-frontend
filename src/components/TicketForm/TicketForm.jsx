@@ -8,9 +8,10 @@ const TicketForm = ({lines}) => {
 
     const lineList = lines.map(line => ({
        name: line.line,
-       station: line.Stations.Name
+       station: line.Stations
 
     }))
+    console.log(lineList);
 
     function handleLineSelect(event) {
         console.log('Selected Line', event.target.value)
@@ -52,8 +53,8 @@ const TicketForm = ({lines}) => {
             aria-label=".form-select-lg example"
             >
                 <option value=''>Select the Station</option>
-                {lineList.map((station, key) => (
-                    <option key={lines.line} value={lines.station}>{lines.station}</option>
+                {lineList.station.map((station, key) => (
+                    <option >{station.station}</option>
                 ))}
 
             </select>
