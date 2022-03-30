@@ -73,8 +73,8 @@ const App = () => {
         />} />
         <Route path='/stations' 
           element={<StationsList />}
-        />
-        <Route path='/station-details' 
+        />                               
+        <Route path='/station-details/:code' 
           element={<StationDetails timeTables={timeTables} />}
         />
       </Routes>
