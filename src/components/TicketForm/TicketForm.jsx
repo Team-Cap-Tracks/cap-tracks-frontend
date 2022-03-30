@@ -47,8 +47,11 @@ const TicketForm = ({lines}) => {
             name='Stations' 
             onChange={event => handleStationSelect(event)}
             value={selectedStation}
+            className="form-select form-select-lg mb-3" 
+            aria-label=".form-select-lg example"
             >
-                <option value=''></option>
+                <option value=''>Select the Station</option>
+
 
             </select>
 
