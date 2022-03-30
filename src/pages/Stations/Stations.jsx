@@ -3,7 +3,6 @@ import styles from '../StationDetails/StationDetails'
 
 const StationsList = (props) => {
   let location = useLocation()
-  console.log(location)
   return (
     <>
       <h1  className={styles.station}>Stations</h1>
@@ -11,7 +10,7 @@ const StationsList = (props) => {
         return (
           <>
             <Link 
-              to='/station-details'
+              to={`/station-details/${stationList.Code}`}
               key={stationList.Code}
               state={{stationList}}
             >
