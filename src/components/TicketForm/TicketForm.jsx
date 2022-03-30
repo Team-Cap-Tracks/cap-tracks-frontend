@@ -20,6 +20,10 @@ const TicketForm = ({lines}) => {
         setSelectedStation('')
     }
 
+    function handleStationSelect(event) {
+        
+    }
+
 
 
 
