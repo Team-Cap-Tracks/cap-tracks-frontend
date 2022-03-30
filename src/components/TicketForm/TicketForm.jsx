@@ -9,7 +9,6 @@ const TicketForm = ({lines}) => {
     const lineList = lines.map(line => ({
        name: line.line,
        station: line.Stations
-
     }))
     console.log(lineList);
 
@@ -27,7 +26,7 @@ const TicketForm = ({lines}) => {
         const stationSel = event.target.value
         setSelectedStation(stationSel)
     }
-
+    
   return (
     <>
         <div>Ticket Form</div>
@@ -56,9 +55,7 @@ const TicketForm = ({lines}) => {
                 {lineList.station.map((station, key) => (
                     <option >{station.station}</option>
                 ))}
-
             </select>
-
             <button>Create Ticket</button>
         </form>
     </>
