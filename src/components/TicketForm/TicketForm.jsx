@@ -59,7 +59,7 @@ const TicketForm = ({lines}) => {
             >
                 <option value=''>Select the Station</option>
                 {lineList.map((lines, idx) => (
-                    <option key={idx}>{lines.stations.name}</option>
+                    <option key={idx}>{lines.name}</option>
                 ))}
             </select>
             <button>Create Ticket</button>
