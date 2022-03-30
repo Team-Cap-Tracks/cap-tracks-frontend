@@ -1,9 +1,9 @@
-const BASE_URL = `https://api.wmata.com/Rail.svc/json/jStationTimes?=`
+const BASE_URL = `http://localhost:3001/api/timetables/get-times/`
 
-
+const API_KEY = `${process.env.API_KEY}`
 
 function getAllTimes(code) {
-  return fetch (`${BASE_URL}${code}&api_key=b98a3faf5dad4504a8c99f11e4e196b0`)
+  return fetch (`${BASE_URL}${code}`)
     .then(res => res.json())
 }
 
