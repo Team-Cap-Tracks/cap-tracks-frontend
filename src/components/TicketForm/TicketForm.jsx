@@ -58,9 +58,13 @@ const TicketForm = ({lines}) => {
             aria-label=".form-select-lg example"
             >
                 <option value=''>Select the Station</option>
-                {lineList.map((lines, idx) => (
-                    <option key={idx}>{lines.name}</option>
-                ))}
+                {lineList.map(({ stations }) => (
+                    <>
+                        {stations.map(({ Name }) => (
+                            <option>{Name}</option>
+                            ))}
+                    </>
+                ))}       
             </select>
             <button>Create Ticket</button>
         </form>
