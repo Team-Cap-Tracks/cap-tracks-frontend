@@ -1,7 +1,8 @@
 import { Link } from 'react-router-dom'
 import styles from './Profiles.module.css'
+import TicketForm from '../../components/TicketForm/TicketForm'
 
-const Profiles = ({ user, handleLogout }) => {
+const Profiles = ({ user, handleLogout, lines }) => {
   return (
     <>
       {user ?
@@ -12,6 +13,7 @@ const Profiles = ({ user, handleLogout }) => {
       <li><Link to="/changePassword">Change Password</Link></li>
       </ul>
       <button>Create Ticket</button>
+      <TicketForm />
       </>
       :
       <h1>No User</h1>

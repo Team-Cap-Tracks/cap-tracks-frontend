@@ -60,6 +60,7 @@ const App = () => {
           <Route
             path="/profiles"
             element={user ? <Profiles 
+            lines={lines}
             user={user} handleLogout={handleLogout} />
             : 
             <Navigate to="/" />}
