@@ -51,7 +51,7 @@ const SignupForm = props => {
           autoComplete="off"
           id="name"
           value={name}
-          class='form-control'
+          className='form-control'
           name="name"
           onChange={handleChange}
         />
@@ -60,7 +60,7 @@ const SignupForm = props => {
         <label htmlFor="email" className={styles.label}>Email</label>
         <input
           type="text"
-          class='form-control'
+          className='form-control'
           autoComplete="off"
           id="email"
           value={email}
@@ -73,7 +73,7 @@ const SignupForm = props => {
         <input
           type="password"
           autoComplete="off"
-          class='form-control'
+          className='form-control'
           id="password"
           value={password}
           name="password"
@@ -88,7 +88,7 @@ const SignupForm = props => {
           type="password"
           autoComplete="off"
           id="confirm"
-          class='form-control'
+          className='form-control'
           value={passwordConf}
           name="passwordConf"
           onChange={handleChange}
