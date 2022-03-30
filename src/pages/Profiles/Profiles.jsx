@@ -13,7 +13,7 @@ const Profiles = ({ user, handleLogout, lines }) => {
       <li><Link to="/changePassword">Change Password</Link></li>
       </ul>
       <button>Create Ticket</button>
-      <TicketForm />
+      <TicketForm lines={lines}/>
       </>
       :
       <h1>No User</h1>
