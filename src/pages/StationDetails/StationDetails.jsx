@@ -11,7 +11,7 @@ const StationDetails = ({timeTables}) => {
 
   useEffect(() => {
     stationTimings.getAllTimes(code)
-    .then(res => console.log("Test", res.json()))
+    .then(res => console.log(res)) 
   })
 
   return (

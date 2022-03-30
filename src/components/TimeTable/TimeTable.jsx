@@ -1,8 +1,9 @@
-import { useEffect } from 'react'
+import { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
 import * as stationTimings from '../../services/TimeTables'
 
 const TimeTable = (props) => {
+  const [schedule, setSchedule] = useState([])
   let { code } = useParams()
 
   useEffect(() => {
