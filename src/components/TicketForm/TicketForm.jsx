@@ -6,21 +6,19 @@ const TicketForm = ({lines}) => {
     const [selectedLine, setSelectedLine] = useState('')
     const [selectedStation, setSelectedStation] = useState('')
 
-    const lineList = lines.line.map(line => {
-       name: line
-    })
+    const lineList = lines.map(line => ({
+       name: line.line
+    }))
     console.log(lineList);
 
 
 
 
-    
-
   return (
     <>
         <div>Ticket Form</div>
         <form>
-            <select onChange={lineChange} className="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
+            <select  className="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
                 Origin: 
                 {lines.map(lines => { 
                     return (
