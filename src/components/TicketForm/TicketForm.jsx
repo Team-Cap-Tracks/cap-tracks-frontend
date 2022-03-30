@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState } from 'react'
 
 
 const TicketForm = ({lines}) => {
@@ -7,9 +7,12 @@ const TicketForm = ({lines}) => {
     const [selectedStation, setSelectedStation] = useState('')
 
     const lineList = lines.map(lines => ({
-       name: lines.line
+       name: lines.line,
+       stations: lines.line.Stations
     }))
-    console.log(lineList);
+    console.log(lines);
+    // console.log(lineList);
+ 
 
     function handleLineSelect(event) {
         console.log('Selected Line', event.target.value)
@@ -39,7 +42,7 @@ const TicketForm = ({lines}) => {
                 Origin: 
                 <option value=''>Select the Line</option>
                 {lineList.map((lines, key) => (
-                    <option key={lines} value={lines.name}>{lines.name}</option>
+                    <option key={lines.line} value={lines.name}>{lines.name}</option>
                     
                 ))}
             </select>
@@ -51,7 +54,9 @@ const TicketForm = ({lines}) => {
             aria-label=".form-select-lg example"
             >
                 <option value=''>Select the Station</option>
-
+                {stations.map((station, key) => (
+                    <option key={lines.line} value={stations}>{stations}</option>
+                ))}
 
             </select>
 
