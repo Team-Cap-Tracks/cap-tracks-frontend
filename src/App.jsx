@@ -75,8 +75,8 @@ const App = () => {
           <Route path='/stations' 
             element={<StationsList />}
           />
-          <Route path='/station-details' 
-            element={<StationDetails />}
+          <Route path='/station-details/:code' 
+            element={<StationDetails timeTables={{timeTables}}/>}
           />
         </Routes>
       </div>
