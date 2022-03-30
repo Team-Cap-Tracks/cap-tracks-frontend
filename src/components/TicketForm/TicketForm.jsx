@@ -6,14 +6,16 @@ const TicketForm = ({lines}) => {
     const [selectedLine, setSelectedLine] = useState('')
     const [selectedStation, setSelectedStation] = useState('')
 
+    let linesArr = {lines}
+
     // const lineList = lines.map(line => ({
     //    name: line.line,
     //    stations: line.Stations
     // }))
     // console.log(lineList);
 
-    const lineList = Object.keys(lines).map(line => ({
-        name: line.lines
+    const lineList = Object.keys(linesArr).map(line => ({
+        name: line.lines.name
       }));
       console.log(lineList);
 
