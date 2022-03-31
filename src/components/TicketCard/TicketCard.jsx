@@ -1,10 +1,15 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
-const TicketCard = (props) => {
+const TicketCard = ({ticket, handleDelete}) => {
   return (
     <>
-    <p>Origin: {props.ticket.startStation} Destination: {props.ticket.endStation}</p>
-    <button onClick={() => props.handleDelete(props.ticket._id)}>Delete Ticket</button>
+    <p>Origin: {ticket.startStation} Destination: {ticket.endStation}</p>
+    <button onClick={() => handleDelete(ticket._id)}>Delete Ticket</button>
+    <Link 
+      to='/editTicket'
+      state={{ticket}}
+    />
     </>
   )
 }
