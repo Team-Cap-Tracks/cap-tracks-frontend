@@ -1,6 +1,7 @@
 import React from 'react'
 
 const TicketCard = (props) => {
+  console.log(props.startStation)
   return (
     <>
     <p>{props.ticket.startStation}</p>
