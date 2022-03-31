@@ -32,8 +32,21 @@ function deleteTicket(id) {
   .then(res => res.json())
 }
 
+function update(ticket) {
+  return fetch(`${BASE_URL}/${ticket._id}`, {
+    method: 'PUT',
+    headers: {
+      'content-type': 'application/json',
+      'Authorization': `Bearer ${tokenService.getToken()}`
+    },
+    body: JSON.stringify(ticket)
+  })
+  .then(res => res.json())
+}
+
 export {
   create,
   getAll,
+  update,
   deleteTicket,
 }

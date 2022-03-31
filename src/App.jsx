@@ -8,6 +8,7 @@ import Profiles from './pages/Profiles/Profiles'
 import ChangePassword from './pages/ChangePassword/ChangePassword'
 import Lines from './pages/Lines/Lines'
 import StationsList from './pages/Stations/Stations'
+import EditForm from './pages/EditForm/EditForm.jsx'
 import * as authService from './services/authService'
 import * as lineService from './services/Lines'
 import * as timeTableService from './services/TimeTables'
@@ -55,6 +56,15 @@ const App = () => {
     setUser(authService.getUser())
   }
 
+  const handleUpdateTicket = updatedTicketData => {
+    ticketService.update(updatedTicketData)
+    .then(updatedTicket => {
+      const newTicketsArray = tickets.map(ticket => ticket._id === updatedTicket._id ? updatedTicket : ticket)
+      setTickets(newTicketsArray)
+      navigate('/profiles')
+    })
+  }
+
   const handleDelete = (id) => {
     ticketService.deleteTicket(id)
     .then(deletedTicket => setTickets(tickets.filter(ticket => ticket._id !== deletedTicket._id)))
@@ -83,9 +93,17 @@ const App = () => {
             handleAddTicket={handleAddTicket}
             tickets={tickets}
             handleDelete={handleDelete}
+            handleUpdateTicket={handleUpdateTicket}
             />
             : 
             <Navigate to="/" />}
+          />
+          <Route 
+            path="/editTicket"
+            element={<EditForm 
+              lines={lines} 
+              handleUpdateTicket={handleUpdateTicket}
+              />}
           />
           <Route
             path="/changePassword"

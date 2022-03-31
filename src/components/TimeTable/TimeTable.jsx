@@ -14,7 +14,6 @@ const TimeTable = (props) => {
   
   return (
     <>
-    {console.log('station details props', schedule)}
       <div className={styles.stationschedule}>
       <h1 className={styles.stationtitle}>Station Schedule</h1>
       {/* Monday */}

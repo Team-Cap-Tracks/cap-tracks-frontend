@@ -1,7 +1,9 @@
-import { useState, useEffect, useRef } from 'react'
+import { useState, useRef } from 'react'
+import { useLocation } from 'react-router-dom'
 
 
-const TicketForm = ({lines, handleAddTicket }) => {
+const EditForm = ({lines, handleUpdateTicket }) => {
+    const location = useLocation()
     const formElement = useRef()
     const [validForm, setValidForm] = useState(false)
     const [stations, setStations] = useState([])
@@ -10,15 +12,17 @@ const TicketForm = ({lines, handleAddTicket }) => {
     const [selectedStation, setSelectedStation] = useState('')
     const [selectedLine2, setSelectedLine2] = useState('')
     const [selectedStation2, setSelectedStation2] = useState('')
-    const [formData, setFormData ] = useState({
-        startStation: '',
-        endStation: ''
-    })
+    const [formData, setFormData ] = useState(location.state.ticket)
 
     const lineList = lines.map(line => ({
        name: line.line,
        stations: line.Stations
     }))
+
+    const lineList2 = lines.map(line => ({
+      name: line.line,
+      stations: line.Stations
+   }))
 
     function handleLineSelect(event) {
         const lineSel = event.target.value
@@ -34,10 +38,7 @@ const TicketForm = ({lines, handleAddTicket }) => {
         setFormData({...formData, startStation: event.target.value})
     }
 
-    const lineList2 = lines.map(line => ({
-        name: line.line,
-        stations: line.Stations
-     }))
+    
  
      function handleLineSelect2(event) {
          const lineSel2 = event.target.value
@@ -55,7 +56,7 @@ const TicketForm = ({lines, handleAddTicket }) => {
 
     const handleSubmit = event => {
         event.preventDefault()
-        handleAddTicket(formData)
+        handleUpdateTicket(formData)
     }
 
   return (
@@ -120,11 +121,10 @@ const TicketForm = ({lines, handleAddTicket }) => {
                                 </>
                         })}
                 </select>
-            <button type='submit'>Create Ticket</button>
+            <button type='submit'>Update Ticket</button>
         </form>
     </>
   )
 }
 
-export default TicketForm
-
+export default EditForm
