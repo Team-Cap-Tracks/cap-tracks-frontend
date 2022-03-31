@@ -6,8 +6,8 @@ const TicketForm = ({lines, handleAddTicket }) => {
     const [selectedLine, setSelectedLine] = useState('')
     const [selectedStation, setSelectedStation] = useState('')
     const [formData, setFormData ] = useState({
-        line: '',
-        station: '',
+        line: {selectedLine},
+        station: {selectedStation},
         date: ''
     })
 
@@ -30,7 +30,8 @@ const TicketForm = ({lines, handleAddTicket }) => {
     }
 
     const handleSubmit = event => {
-        
+        event.preventDefault()
+        handleAddTicket(formData)
     }
 
   return (
@@ -42,7 +43,7 @@ const TicketForm = ({lines, handleAddTicket }) => {
                 <select 
                 name='Lines' 
                 onChange={event => handleLineSelect(event)} 
-                value={formData.line} 
+                value={formData.selectedLine} 
                 className="form-select form-select-lg mb-3" 
                 aria-label=".form-select-lg example">
                     Origin: 
@@ -55,7 +56,7 @@ const TicketForm = ({lines, handleAddTicket }) => {
                 <select 
                 name='Stations' 
                 onChange={event => handleStationSelect(event)}
-                value={formData.station}
+                value={formData.selectedStation}
                 className="form-select form-select-lg mb-3" 
                 aria-label=".form-select-lg example"
                 >
@@ -70,7 +71,7 @@ const TicketForm = ({lines, handleAddTicket }) => {
                         })}
                 </select>
                 <label>Enter the Date you will be riding here!</label>
-                <input type='datetime-local' value={formData.date}></input>
+        
             <button>Create Ticket</button>
         </form>
     </>
