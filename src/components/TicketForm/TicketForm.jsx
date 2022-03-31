@@ -40,6 +40,38 @@ const TicketForm = ({lines}) => {
                     <option value=''>Select the Line</option>
                     {lineList.map((lines, idx) => (
                         <option key={idx} value={lines.name}>{lines.name}</option>
+                    ))}
+                </select>
+            <label for='Station'>Station</label>
+                <select 
+                name='Stations' 
+                onChange={event => handleStationSelect(event)}
+                value={selectedStation}
+                className="form-select form-select-lg mb-3" 
+                aria-label=".form-select-lg example"
+                >
+                    <option value=''>Select the Station</option>
+                    {lineList.filter(( line ) => line.name === selectedLine)
+                        .map((station) => {
+                            return <>
+                                {station.stations.map(({ Name }) => (
+                                    <option>{Name}</option>
+                                ))}
+                                </>
+                        })}
+                </select>
+                <label>Destination:</label><br></br>
+                <label for='line'>Line</label>
+                <select 
+                name='Lines' 
+                onChange={event => handleLineSelect(event)} 
+                value={selectedLine} 
+                className="form-select form-select-lg mb-3" 
+                aria-label=".form-select-lg example">
+                    Origin: 
+                    <option value=''>Select the Line</option>
+                    {lineList.map((lines, idx) => (
+                        <option key={idx} value={lines.name}>{lines.name}</option>
 
                     ))}
                 </select>
@@ -61,8 +93,7 @@ const TicketForm = ({lines}) => {
                                 </>
                         })}
                 </select>
-            <label for >Destination:</label><br></br>
-            <label></label>
+            
             <button>Create Ticket</button>
         </form>
     </>
