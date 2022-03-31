@@ -6,7 +6,7 @@ const TicketList = (props) => {
   return (
     <>
     {props.tickets.map(ticket => (
-     <p>{ticket.startStation}</p>
+     <p>Origin: {ticket.startStation} Destination: {ticket.endStation}</p>
     ))}
     </>
   )
