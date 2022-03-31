@@ -7,7 +7,8 @@ const TicketList = (props) => {
     {props.tickets.map(ticket => (
       <TicketCard 
       key={ticket._id}
-      ticket={ticket}/>
+      ticket={ticket}
+      handleDelete={props.handleDelete}/>
     ))}
     </>
   )
