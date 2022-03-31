@@ -5,10 +5,8 @@ const TicketForm = ({lines, handleAddTicket }) => {
     const [stations, setStations] = useState([])
     const [selectedLine, setSelectedLine] = useState('')
     const [selectedStation, setSelectedStation] = useState('')
-    const [formData, setFormData ] = useState({
-        startStation: selectedStation
-    })
-    console.log(formData);
+    const [formData, setFormData ] = useState({})
+
 
     const lineList = lines.map(line => ({
        name: line.line,
