@@ -69,7 +69,27 @@ const TicketForm = ({lines, handleAddTicket }) => {
                                 ))}
                                 </>
                         })}
-                </select>       
+                </select>  
+                <label>Destination</label>
+                <select 
+                name='Lines2' 
+                onChange={event => handleLineSelect(event)} 
+                value={selectedLine} 
+                className="form-select form-select-lg mb-3" 
+                aria-label=".form-select-lg example">
+                    <option value=''>Select the Line</option>
+                    {lineList.map((lines, idx) => (
+                        <option key={idx} value={lines.name}>{lines.name}</option>
+                    ))}
+                </select>
+                   
+
+
+
+
+
+
+
             <button type='submit'>Create Ticket</button>
         </form>
     </>
