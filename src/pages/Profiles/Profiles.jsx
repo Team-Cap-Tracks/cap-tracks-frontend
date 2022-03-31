@@ -16,7 +16,7 @@ const Profiles = ({ user, handleLogout, lines, handleAddTicket, tickets, handleD
       <TicketForm lines={lines} handleAddTicket={handleAddTicket}/>
       <br />
       <br />
-      <TicketList tickets={tickets} handleDelete={handleDelete} />
+      <TicketList tickets={tickets} handleDelete={handleDelete} lines={lines} />
       </>
       :
       <h1>No User</h1>

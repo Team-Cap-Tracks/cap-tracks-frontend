@@ -8,6 +8,7 @@ import Profiles from './pages/Profiles/Profiles'
 import ChangePassword from './pages/ChangePassword/ChangePassword'
 import Lines from './pages/Lines/Lines'
 import StationsList from './pages/Stations/Stations'
+import EditForm from './pages/EditForm/EditForm.jsx'
 import * as authService from './services/authService'
 import * as lineService from './services/Lines'
 import * as timeTableService from './services/TimeTables'
@@ -98,6 +99,7 @@ const App = () => {
           />
           <Route 
             path="/editTicket"
+            element={<EditForm />}
           />
           <Route
             path="/changePassword"

@@ -3,6 +3,7 @@ import { useLocation } from 'react-router-dom'
 
 
 const EditForm = ({lines, handleAddTicket }) => {
+    const location = useLocation()
     const formElement = useRef()
     const [validForm, setValidForm] = useState(false)
     const [stations, setStations] = useState([])
@@ -11,7 +12,7 @@ const EditForm = ({lines, handleAddTicket }) => {
     const [selectedStation, setSelectedStation] = useState('')
     const [selectedLine2, setSelectedLine2] = useState('')
     const [selectedStation2, setSelectedStation2] = useState('')
-    const [formData, setFormData ] = useState(location.props.state.ticket)
+    const [formData, setFormData ] = useState(location.state.ticket)
 
     const lineList = lines.map(line => ({
        name: line.line,

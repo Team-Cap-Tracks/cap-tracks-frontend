@@ -9,7 +9,9 @@ const TicketCard = ({ticket, handleDelete}) => {
     <Link 
       to='/editTicket'
       state={{ticket}}
-    />
+    >
+      Edit
+    </Link>
     </>
   )
 }
