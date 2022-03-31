@@ -100,7 +100,10 @@ const App = () => {
           />
           <Route 
             path="/editTicket"
-            element={<EditForm lines={lines} />}
+            element={<EditForm 
+              lines={lines} 
+              handleUpdateTicket={handleUpdateTicket}
+              />}
           />
           <Route
             path="/changePassword"

@@ -9,8 +9,7 @@ const TicketCard = ({ticket, handleDelete, lines, handleUpdateTicket}) => {
     <Link 
       to='/editTicket'
       state={{ticket}}
-      lines={lines}
-      handleUpdateTicket={handleUpdateTicket}
+      
     >
       <button>Update Ticket</button>
     </Link>
