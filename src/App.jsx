@@ -24,7 +24,6 @@ const App = () => {
   const [user, setUser] = useState(authService.getUser())
   const [tickets, setTickets] = useState([])
   const navigate = useNavigate()
-  console.log(tickets);
 
   useEffect(() => {
     lineService.getAll()

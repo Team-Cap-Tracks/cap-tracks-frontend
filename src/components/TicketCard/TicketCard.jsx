@@ -1,8 +1,8 @@
 import React from 'react'
 
-const TicketCard = () => {
+const TicketCard = (props) => {
   return (
-    <div>TicketCard</div>
+    <p>{props.ticket.startStation}</p>
   )
 }
 

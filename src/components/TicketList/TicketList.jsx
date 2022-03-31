@@ -4,9 +4,8 @@ import TicketCard from '../TicketCard/TicketCard'
 const TicketList = (props) => {
   return (
     <>
-    <TicketCard />
     {props.tickets.map(ticket => (
-     <p>{ticket.startStation}</p>
+      <TicketCard ticket={ticket}/>
     ))}
     </>
   )
