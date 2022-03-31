@@ -12,7 +12,6 @@ const Profiles = ({ user, handleLogout, lines }) => {
       <li><Link to="" onClick={handleLogout}>LOG OUT</Link></li>
       <li><Link to="/changePassword">Change Password</Link></li>
       </ul>
-      <button>Create a Ticket</button>
       <TicketForm lines={lines}/>
       </>
       :
