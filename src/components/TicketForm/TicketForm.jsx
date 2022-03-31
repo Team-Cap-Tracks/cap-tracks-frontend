@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 
 
-const TicketForm = ({lines}) => {
+const TicketForm = ({lines, handleAddTicket }) => {
     const [stations, setStations] = useState([])
     const [selectedLine, setSelectedLine] = useState('')
     const [selectedStation, setSelectedStation] = useState('')
@@ -22,6 +22,10 @@ const TicketForm = ({lines}) => {
     function handleStationSelect(event) {
         const stationSel = event.target.value
         setSelectedStation(stationSel)
+    }
+
+    const handleSubmit = event => {
+        
     }
 
   return (

@@ -11,6 +11,7 @@ import StationsList from './pages/Stations/Stations'
 import * as authService from './services/authService'
 import * as lineService from './services/Lines'
 import * as timeTableService from './services/TimeTables'
+import * as ticketService from './services/ticketService'
 import { FooterContainer } from './containers/footer'
 import StationDetails from './pages/StationDetails/StationDetails.jsx'
 
@@ -21,6 +22,7 @@ const App = () => {
   const [lines, setLines] = useState([])
   const [timeTables, setTimeTables] = useState([])
   const [user, setUser] = useState(authService.getUser())
+  const [tickets, setTickets] = useState([])
   const navigate = useNavigate()
 
   useEffect(() => {
@@ -32,6 +34,11 @@ const App = () => {
     timeTableService.getAllTimes()
     .then(allTimeTables => setTimeTables(allTimeTables))
   }, [])
+
+  const handleAddTicket = async newTicketData => {
+    const newTicket = ticketService.create(newTicketData)
+    setTickets([...tickets, newTicket])
+  }
 
   const handleLogout = () => {
     authService.logout()
@@ -61,7 +68,10 @@ const App = () => {
             path="/profiles"
             element={user ? <Profiles 
             lines={lines}
-            user={user} handleLogout={handleLogout} />
+            user={user} 
+            handleLogout={handleLogout} 
+            handleAddTicket={handleAddTicket}
+            />
             : 
             <Navigate to="/" />}
           />
