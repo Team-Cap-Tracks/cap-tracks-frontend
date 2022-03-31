@@ -1,4 +1,5 @@
 import React from 'react'
+import * as ticketService from '../../services/ticketService'
 
 const TicketList = () => {
   return (
