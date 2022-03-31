@@ -27,9 +27,9 @@ const TicketForm = ({lines}) => {
   return (
     <>
         <div>Ticket Form</div>
-            <label for='origin'>Origin:</label>
+            <label>Origin:</label>
         <form>
-            <label for='line'>Line</label>
+            <label>Line</label>
                 <select 
                 name='Lines' 
                 onChange={event => handleLineSelect(event)} 
@@ -42,7 +42,7 @@ const TicketForm = ({lines}) => {
                         <option key={idx} value={lines.name}>{lines.name}</option>
                     ))}
                 </select>
-            <label for='Station'>Station</label>
+            <label>Station</label>
                 <select 
                 name='Stations' 
                 onChange={event => handleStationSelect(event)}
@@ -61,7 +61,7 @@ const TicketForm = ({lines}) => {
                         })}
                 </select>
                 <label>Destination:</label><br></br>
-                <label for='line'>Line</label>
+                <label>Line</label>
                 <select 
                 name='Lines' 
                 onChange={event => handleLineSelect(event)} 
@@ -74,7 +74,7 @@ const TicketForm = ({lines}) => {
                         <option key={idx} value={lines.name}>{lines.name}</option>
                     ))}
                 </select>
-            <label for='Station'>Station</label>
+            <label>Station</label>
                 <select 
                 name='Stations' 
                 onChange={event => handleStationSelect(event)}
