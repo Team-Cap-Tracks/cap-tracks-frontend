@@ -96,6 +96,9 @@ const App = () => {
             : 
             <Navigate to="/" />}
           />
+          <Route 
+            path="/editTicket"
+          />
           <Route
             path="/changePassword"
             element={user ? <ChangePassword handleSignupOrLogin={handleSignupOrLogin}/> : <Navigate to="/login" />}
