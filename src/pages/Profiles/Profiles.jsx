@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom'
 import styles from './Profiles.module.css'
 import TicketForm from '../../components/TicketForm/TicketForm'
+import TicketList from '../../components/TicketList/TicketList'
 
 const Profiles = ({ user, handleLogout, lines, handleAddTicket }) => {
   return (
@@ -12,6 +13,7 @@ const Profiles = ({ user, handleLogout, lines, handleAddTicket }) => {
       <li><Link to="" onClick={handleLogout}>LOG OUT</Link></li>
       <li><Link to="/changePassword">Change Password</Link></li>
       </ul>
+      <TicketList />
       <TicketForm lines={lines} handleAddTicket={handleAddTicket}/>
       </>
       :
