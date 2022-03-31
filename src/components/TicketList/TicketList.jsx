@@ -5,7 +5,9 @@ const TicketList = (props) => {
   return (
     <>
     {props.tickets.map(ticket => (
-      <TicketCard ticket={ticket}/>
+      <TicketCard 
+      key={ticket._id}
+      ticket={ticket}/>
     ))}
     </>
   )
