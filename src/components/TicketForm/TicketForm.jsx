@@ -6,7 +6,7 @@ const TicketForm = ({lines, handleAddTicket }) => {
     const [selectedLine, setSelectedLine] = useState('')
     const [selectedStation, setSelectedStation] = useState('')
     const [formData, setFormData ] = useState({
-        startStation: {selectedStation}
+        startStation: selectedStation
     })
     console.log(formData);
 
@@ -38,7 +38,7 @@ const TicketForm = ({lines, handleAddTicket }) => {
     <>
         <div>Ticket Form</div>
             <label>Origin:</label>
-        <form>
+        <form onSubmit={handleSubmit}>
             <label>Line</label>
                 <select 
                 name='Lines' 
