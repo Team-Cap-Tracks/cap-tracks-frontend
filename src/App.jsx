@@ -55,6 +55,15 @@ const App = () => {
     setUser(authService.getUser())
   }
 
+  const handleUpdateTicket = updatedTicketData => {
+    ticketService.update(updatedTicketData)
+    .then(updatedTicket => {
+      const newTicketsArray = tickets.map(ticket => ticket._id === updatedTicket._id ? updatedTicket : ticket)
+      setTickets(newTicketsArray)
+      
+    })
+  }
+
   const handleDelete = (id) => {
     ticketService.deleteTicket(id)
     .then(deletedTicket => setTickets(tickets.filter(ticket => ticket._id !== deletedTicket._id)))
