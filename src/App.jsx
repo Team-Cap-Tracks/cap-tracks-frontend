@@ -36,6 +36,11 @@ const App = () => {
     .then(allTimeTables => setTimeTables(allTimeTables))
   }, [])
 
+  useEffect(() => {
+    ticketService.getAll()
+    .then(allTickets => setTickets(allTickets))
+  }, [])
+
   const handleAddTicket = async newTicketData => {
     const newTicket = ticketService.create(newTicketData)
     setTickets([...tickets, newTicket])
@@ -72,6 +77,7 @@ const App = () => {
             user={user} 
             handleLogout={handleLogout} 
             handleAddTicket={handleAddTicket}
+            tickets={tickets}
             />
             : 
             <Navigate to="/" />}
