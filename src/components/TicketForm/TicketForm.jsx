@@ -12,16 +12,10 @@ const TicketForm = ({lines}) => {
     }))
     console.log(lineList);
 
-    // const stationList = lines.map(station => ({
-    //     stations: station.Stations
-    // }))
-    // console.log(stationList);
-    // console.log(lines);
-
     function handleLineSelect(event) {
         console.log('Selected Line', event.target.value)
         const lineSel = event.target.value
-        const stationsSel = lineSel !== '' ? {lines}[lineSel] : []
+        const stationsSel = lineSel !== '' ? lines[lineSel] : []
         setSelectedLine(lineSel)
         setStations(stationsSel)
         setSelectedStation('')
@@ -58,13 +52,15 @@ const TicketForm = ({lines}) => {
             aria-label=".form-select-lg example"
             >
                 <option value=''>Select the Station</option>
-                {lineList.map(({ stations }) => (
-                    <>
-                        {stations.map(({ Name }) => (
-                            <option>{Name}</option>
+                {lineList.filter(( line ) => line.name === selectedLine)
+                    .map((station) => {
+
+                        return <>
+                            {station.stations.map(({ Name }) => (
+                                <option>{Name}</option>
                             ))}
-                    </>
-                ))}       
+                            </>
+                    })}
             </select>
             <button>Create Ticket</button>
         </form>
