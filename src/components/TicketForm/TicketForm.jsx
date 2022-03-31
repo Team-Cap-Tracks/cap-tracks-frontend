@@ -5,6 +5,11 @@ const TicketForm = ({lines, handleAddTicket }) => {
     const [stations, setStations] = useState([])
     const [selectedLine, setSelectedLine] = useState('')
     const [selectedStation, setSelectedStation] = useState('')
+    const [formData, setFormData ] = useState({
+        line: '',
+        station: '',
+        date: ''
+    })
 
     const lineList = lines.map(line => ({
        name: line.line,
@@ -37,7 +42,7 @@ const TicketForm = ({lines, handleAddTicket }) => {
                 <select 
                 name='Lines' 
                 onChange={event => handleLineSelect(event)} 
-                value={selectedLine} 
+                value={formData.line} 
                 className="form-select form-select-lg mb-3" 
                 aria-label=".form-select-lg example">
                     Origin: 
@@ -50,7 +55,7 @@ const TicketForm = ({lines, handleAddTicket }) => {
                 <select 
                 name='Stations' 
                 onChange={event => handleStationSelect(event)}
-                value={selectedStation}
+                value={formData.station}
                 className="form-select form-select-lg mb-3" 
                 aria-label=".form-select-lg example"
                 >
@@ -65,7 +70,7 @@ const TicketForm = ({lines, handleAddTicket }) => {
                         })}
                 </select>
                 <label>Enter the Date you will be riding here!</label>
-                <input type='datetime-local'></input>
+                <input type='datetime-local' value={formData.date}></input>
             <button>Create Ticket</button>
         </form>
     </>
