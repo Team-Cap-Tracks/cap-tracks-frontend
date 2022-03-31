@@ -60,7 +60,8 @@ const TicketForm = ({lines}) => {
                                 </>
                         })}
                 </select>
-
+                <label>Enter the Date you will be riding here!</label>
+                <input type='datetime-local'></input>
             <button>Create Ticket</button>
         </form>
     </>
