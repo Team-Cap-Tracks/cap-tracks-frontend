@@ -61,7 +61,7 @@ const App = () => {
     .then(updatedTicket => {
       const newTicketsArray = tickets.map(ticket => ticket._id === updatedTicket._id ? updatedTicket : ticket)
       setTickets(newTicketsArray)
-      
+      navigate('/profiles')
     })
   }
 
