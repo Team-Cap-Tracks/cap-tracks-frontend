@@ -1,0 +1,12 @@
+.stationschedule {
+    font-style: normal;
+    color: #272643;
+    background-color: #bae8e8;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    text-align: center;
+    width: 60%;
+    margin: auto;
+    border-radius: 5px;
+}
