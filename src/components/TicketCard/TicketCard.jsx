@@ -1,7 +1,6 @@
 import React from 'react'
 
 const TicketCard = (props) => {
-  console.log(props.startStation)
   return (
     <>
     <p>Origin: {props.ticket.startStation} Destination: {props.ticket.endStation}</p>

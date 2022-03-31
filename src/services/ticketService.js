@@ -32,6 +32,18 @@ function deleteTicket(id) {
   .then(res => res.json())
 }
 
+function update(puppy) {
+  return fetch(`${BASE_URL}/${puppy._id}`, {
+    method: 'PUT',
+    headers: {
+      'content-type': 'application/json',
+      'Authorization': `Bearer ${tokenService.getToken()}`
+    },
+    body: JSON.stringify(puppy)
+  })
+  .then(res => res.json())
+}
+
 export {
   create,
   getAll,
