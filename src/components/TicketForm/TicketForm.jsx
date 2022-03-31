@@ -1,12 +1,15 @@
-import React, { useState } from 'react'
+import { useState, useEffect, useRef } from 'react'
 
 
 const TicketForm = ({lines, handleAddTicket }) => {
+    const formElement = useRef()
+    const [validForm, setValidForm] = useState(false)
     const [stations, setStations] = useState([])
     const [selectedLine, setSelectedLine] = useState('')
     const [selectedStation, setSelectedStation] = useState('')
-    const [formData, setFormData ] = useState({})
+    const [formData, setFormData ] = useState(selectedStation)
 
+    console.log(formData);
 
     const lineList = lines.map(line => ({
        name: line.line,
@@ -54,11 +57,11 @@ const TicketForm = ({lines, handleAddTicket }) => {
                 <select 
                 name='Stations' 
                 onChange={event => handleStationSelect(event)}
-                value={selectedStation}
+                value={formData.selectedStation}
                 className="form-select form-select-lg mb-3" 
                 aria-label=".form-select-lg example"
                 >
-                    <option value=''>Select the Station</option>
+                    <option value={formData.startStation}>Select the Station</option>
                     {lineList.filter(( line ) => line.name === selectedLine)
                         .map((station) => {
                             return <>
