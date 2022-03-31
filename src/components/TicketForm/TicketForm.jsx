@@ -120,14 +120,6 @@ const TicketForm = ({lines, handleAddTicket }) => {
                                 </>
                         })}
                 </select>
-                   
-
-
-
-
-
-
-
             <button type='submit'>Create Ticket</button>
         </form>
     </>

@@ -2,7 +2,7 @@ import { useState, useEffect, useRef } from 'react'
 import { useLocation } from 'react-router-dom'
 
 
-const EditForm = ({lines, handleAddTicket }) => {
+const EditForm = ({lines, handleUpdateTicket }) => {
     const location = useLocation()
     const formElement = useRef()
     const [validForm, setValidForm] = useState(false)

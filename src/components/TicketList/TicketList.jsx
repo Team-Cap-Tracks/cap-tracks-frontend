@@ -8,8 +8,9 @@ const TicketList = (props) => {
       <TicketCard 
       key={ticket._id}
       ticket={ticket}
-      handleDelete={props.handleDelete}/>
-      lines={}
+      handleDelete={props.handleDelete}
+      lines={props.lines}
+      />
     ))}
     </>
   )
