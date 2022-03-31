@@ -1,12 +1,14 @@
 import React from 'react'
-import * as ticketService from '../../services/ticketService'
+import TicketCard from '../TicketCard/TicketCard'
 
 const TicketList = (props) => {
-  console.log(props.tickets)
   return (
     <>
     {props.tickets.map(ticket => (
-     <p>Origin: {ticket.startStation} Destination: {ticket.endStation}</p>
+      <TicketCard 
+      key={ticket._id}
+      ticket={ticket}
+      handleDelete={props.handleDelete}/>
     ))}
     </>
   )

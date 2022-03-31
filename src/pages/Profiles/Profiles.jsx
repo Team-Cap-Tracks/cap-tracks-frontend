@@ -3,7 +3,7 @@ import styles from './Profiles.module.css'
 import TicketForm from '../../components/TicketForm/TicketForm'
 import TicketList from '../../components/TicketList/TicketList'
 
-const Profiles = ({ user, handleLogout, lines, handleAddTicket, tickets }) => {
+const Profiles = ({ user, handleLogout, lines, handleAddTicket, tickets, handleDelete }) => {
   return (
     <>
       {user ?
@@ -13,8 +13,10 @@ const Profiles = ({ user, handleLogout, lines, handleAddTicket, tickets }) => {
       <li><Link to="" onClick={handleLogout}>LOG OUT</Link></li>
       <li><Link to="/changePassword">Change Password</Link></li>
       </ul>
-      <TicketList tickets={tickets}/>
       <TicketForm lines={lines} handleAddTicket={handleAddTicket}/>
+      <br />
+      <br />
+      <TicketList tickets={tickets} handleDelete={handleDelete} />
       </>
       :
       <h1>No User</h1>

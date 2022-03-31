@@ -24,7 +24,6 @@ const App = () => {
   const [user, setUser] = useState(authService.getUser())
   const [tickets, setTickets] = useState([])
   const navigate = useNavigate()
-  console.log(tickets);
 
   useEffect(() => {
     lineService.getAll()
@@ -56,6 +55,11 @@ const App = () => {
     setUser(authService.getUser())
   }
 
+  const handleDelete = (id) => {
+    ticketService.deleteTicket(id)
+    .then(deletedTicket => setTickets(tickets.filter(ticket => ticket._id !== deletedTicket._id)))
+  }
+
   return (
     <>
       <NavBar user={user} handleLogout={handleLogout} />
@@ -78,6 +82,7 @@ const App = () => {
             handleLogout={handleLogout} 
             handleAddTicket={handleAddTicket}
             tickets={tickets}
+            handleDelete={handleDelete}
             />
             : 
             <Navigate to="/" />}
