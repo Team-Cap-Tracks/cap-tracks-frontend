@@ -1,9 +1,14 @@
 import React from 'react'
 import * as ticketService from '../../services/ticketService'
 
-const TicketList = () => {
+const TicketList = (props) => {
+  console.log(props.tickets)
   return (
-    <h1>TicketList</h1>
+    <>
+    {props.tickets.map(ticket => (
+     <p>{ticket.startStation}</p>
+    ))}
+    </>
   )
 }
 
