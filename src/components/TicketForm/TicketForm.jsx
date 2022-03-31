@@ -40,7 +40,6 @@ const TicketForm = ({lines, handleAddTicket }) => {
         <div>Ticket Form</div>
             <label>Origin:</label>
         <form onSubmit={handleSubmit}>
-            <label>Line</label>
                 <select 
                 name='Lines' 
                 onChange={event => handleLineSelect(event)} 
@@ -48,19 +47,18 @@ const TicketForm = ({lines, handleAddTicket }) => {
                 className="form-select form-select-lg mb-3" 
                 aria-label=".form-select-lg example">
                     Origin: 
-                    <option value=''>Select the Line</option>
+                    <option value=''>Select Origin Line</option>
                     {lineList.map((lines, idx) => (
                         <option key={idx} value={lines.name}>{lines.name}</option>
                     ))}
                 </select>
-            <label>Station</label>
                 <select 
                 name='Stations' 
                 onChange={event => handleStationSelect(event)}
                 className="form-select form-select-lg mb-3" 
                 aria-label=".form-select-lg example"
                 >
-                    <option value={formData.startStation}>Select the Station</option>
+                    <option value={formData.startStation}>Select Origin Station</option>
                     {lineList.filter(( line ) => line.name === selectedLine)
                         .map((station) => {
                             return <>
@@ -77,10 +75,27 @@ const TicketForm = ({lines, handleAddTicket }) => {
                 value={selectedLine} 
                 className="form-select form-select-lg mb-3" 
                 aria-label=".form-select-lg example">
-                    <option value=''>Select the Line</option>
+                    <option value=''>Select Destination Line</option>
                     {lineList.map((lines, idx) => (
                         <option key={idx} value={lines.name}>{lines.name}</option>
                     ))}
+                </select>
+                <label></label>
+                <select 
+                name='Stations' 
+                onChange={event => handleStationSelect(event)}
+                className="form-select form-select-lg mb-3" 
+                aria-label=".form-select-lg example"
+                >
+                    <option value={formData.startStation}>Select Destination Station</option>
+                    {lineList.filter(( line ) => line.name === selectedLine)
+                        .map((station) => {
+                            return <>
+                                {station.stations.map(({ Name }) => (
+                                    <option>{Name}</option>
+                                ))}
+                                </>
+                        })}
                 </select>
                    
 
