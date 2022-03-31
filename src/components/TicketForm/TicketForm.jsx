@@ -6,8 +6,9 @@ const TicketForm = ({lines, handleAddTicket }) => {
     const [selectedLine, setSelectedLine] = useState('')
     const [selectedStation, setSelectedStation] = useState('')
     const [formData, setFormData ] = useState({
-        station: {selectedStation},
+        startStation: {selectedStation}
     })
+    console.log(formData);
 
     const lineList = lines.map(line => ({
        name: line.line,
@@ -25,6 +26,7 @@ const TicketForm = ({lines, handleAddTicket }) => {
     function handleStationSelect(event) {
         const stationSel = event.target.value
         setSelectedStation(stationSel)
+        setFormData({...formData, [event.target.name]: event.target.value})
     }
 
     const handleSubmit = event => {
@@ -54,7 +56,7 @@ const TicketForm = ({lines, handleAddTicket }) => {
                 <select 
                 name='Stations' 
                 onChange={event => handleStationSelect(event)}
-                value={formData.selectedStation}
+                value={selectedStation}
                 className="form-select form-select-lg mb-3" 
                 aria-label=".form-select-lg example"
                 >
