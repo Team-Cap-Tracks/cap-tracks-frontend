@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-const TicketCard = ({ticket, handleDelete, lines}) => {
+const TicketCard = ({ticket, handleDelete, lines, handleUpdateTicket}) => {
   return (
     <>
     <p>Origin: {ticket.startStation} Destination: {ticket.endStation}</p>
@@ -10,8 +10,9 @@ const TicketCard = ({ticket, handleDelete, lines}) => {
       to='/editTicket'
       state={{ticket}}
       lines={lines}
+      handleUpdateTicket={handleUpdateTicket}
     >
-      Edit
+      <button>Update Ticket</button>
     </Link>
     </>
   )

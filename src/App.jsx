@@ -93,13 +93,14 @@ const App = () => {
             handleAddTicket={handleAddTicket}
             tickets={tickets}
             handleDelete={handleDelete}
+            handleUpdateTicket={handleUpdateTicket}
             />
             : 
             <Navigate to="/" />}
           />
           <Route 
             path="/editTicket"
-            element={<EditForm />}
+            element={<EditForm lines={lines} />}
           />
           <Route
             path="/changePassword"

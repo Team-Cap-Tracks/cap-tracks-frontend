@@ -19,6 +19,11 @@ const EditForm = ({lines, handleUpdateTicket }) => {
        stations: line.Stations
     }))
 
+    const lineList2 = lines.map(line => ({
+      name: line.line,
+      stations: line.Stations
+   }))
+
     function handleLineSelect(event) {
         const lineSel = event.target.value
         const stationsSel = lineSel !== '' ? lines[lineSel] : []
@@ -33,10 +38,7 @@ const EditForm = ({lines, handleUpdateTicket }) => {
         setFormData({...formData, startStation: event.target.value})
     }
 
-    const lineList2 = lines.map(line => ({
-        name: line.line,
-        stations: line.Stations
-     }))
+    
  
      function handleLineSelect2(event) {
          const lineSel2 = event.target.value
@@ -54,7 +56,7 @@ const EditForm = ({lines, handleUpdateTicket }) => {
 
     const handleSubmit = event => {
         event.preventDefault()
-        handleAddTicket(formData)
+        handleUpdateTicket(formData)
     }
 
   return (
@@ -119,15 +121,7 @@ const EditForm = ({lines, handleUpdateTicket }) => {
                                 </>
                         })}
                 </select>
-                   
-
-
-
-
-
-
-
-            <button type='submit'>Create Ticket</button>
+            <button type='submit'>Update Ticket</button>
         </form>
     </>
   )

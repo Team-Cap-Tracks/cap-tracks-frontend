@@ -9,7 +9,8 @@ const TicketList = (props) => {
       key={ticket._id}
       ticket={ticket}
       handleDelete={props.handleDelete}
-      lines={props.lines}
+      // lines={props.lines}
+      handleUpdateTicket={props.handleUpdateTicket}
       />
     ))}
     </>
