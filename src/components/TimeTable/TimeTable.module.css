@@ -6,7 +6,11 @@
     font-family: 'Poppins', sans-serif;
     text-decoration: none;
     text-align: center;
-    width: 60%;
+    width: 50%;
     margin: auto;
     border-radius: 5px;
+}
+
+.stationtitle {
+    font-weight: bold;
 }

@@ -16,7 +16,7 @@ const TimeTable = (props) => {
     <>
     {console.log('station details props', schedule)}
       <div className={styles.stationschedule}>
-      <h1>Station Schedule</h1>
+      <h1 className={styles.stationtitle}>Station Schedule</h1>
       {/* Monday */}
       <h2>Monday - Friday: Opens at {schedule?.Monday?.OpeningTime} am</h2>
       {/* First Trains */}
@@ -38,6 +38,7 @@ const TimeTable = (props) => {
       {/* Last Trains */}
       <p>Last Trains: {schedule?.Sunday?.LastTrains[0]?.Time} am to {schedule?.Sunday?.LastTrains[0]?.DestinationStation} {schedule?.Sunday?.LastTrains[1]?.DestinationStation} {schedule?.Sunday?.LastTrains[2]?.DestinationStation} {schedule?.Sunday?.LastTrains[3]?.DestinationStation} {schedule?.Sunday?.LastTrains[4]?.DestinationStation}</p>
     </div>
+    <br></br>
     </>
   )
 }
