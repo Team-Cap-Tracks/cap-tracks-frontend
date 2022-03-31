@@ -11,8 +11,6 @@ const TicketForm = ({lines, handleAddTicket }) => {
         startStation: ''
     })
 
-    console.log(formData);
-
     const lineList = lines.map(line => ({
        name: line.line,
        stations: line.Stations
