@@ -1,6 +1,6 @@
 import { useState, useRef } from 'react'
 import { useLocation } from 'react-router-dom'
-
+import styles from './EditForm.Module.css'
 
 
 const EditForm = ({lines, handleUpdateTicket }) => {
