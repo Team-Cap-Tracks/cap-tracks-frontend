@@ -1,16 +1,21 @@
 # Cap-Tracks
+Cap-Tracks is a route-planning application that takes the mess away from reliable D.C. Metro information and access. It allows the user to view important information, such as station locations and schedule. From there, the user can create a 'ticket' for a specific station-to-station ride. 
+---------------
 
 ### Getting Started: 
 ---------
 Link to [trello board](https://trello.com/b/HGuUv6hL/unit-3-project)
 ### Screenshots:
 ----------
-![Screenshot of wireframe](https://i.imgur.com/d5NXTuX.png)
+![Screenshot of wireframe](https://i.imgur.com/FZieaFA.png)
+![Screenshot of lines page](https://i.imgur.com/gokFZ10.png)
+![Screenshot of schedule page](https://i.imgur.com/3Hn52cK.png)
+![Screenshot of tickets page](https://i.imgur.com/FEOQusG.png)
 ### Technologies Used:
 -----------
 * Javascript (ES2015)
 * HTML5
-* 
+* CSS
 * MongoDB/Mongoose (v6.0.12)
 * Express (v4.17)
 * React (v18)
