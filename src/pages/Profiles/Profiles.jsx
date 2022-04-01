@@ -16,10 +16,12 @@ const Profiles = ({ user, handleLogout, lines, handleAddTicket, tickets, handleD
             <li><Link to="/changePassword">Change Password</Link></li>
           </ul>
         </section>
-        <TicketForm lines={lines} handleAddTicket={handleAddTicket}/>
-        <br />
-        <br />
-        <TicketList tickets={tickets} handleDelete={handleDelete} lines={lines} handleUpdateTicket={handleUpdateTicket}/>
+        <section>
+          <TicketForm lines={lines} handleAddTicket={handleAddTicket}/>
+        </section>
+        <section>
+          <TicketList tickets={tickets} handleDelete={handleDelete} lines={lines} handleUpdateTicket={handleUpdateTicket}/>
+        </section>
         </>
         :
         <h1>No User</h1>

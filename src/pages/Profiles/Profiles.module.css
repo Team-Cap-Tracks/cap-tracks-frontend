@@ -16,7 +16,6 @@ main {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    background-color: #282c34;
     min-height: 100vh;
     color: white;
 }
@@ -39,7 +38,14 @@ main > section:first-child {
     border-radius: 10px;
 }
 
-main > section:last-child {
-    border: 5px solid blueviolet;
+main > section:nth-child(2) {
+    border: 5px solid gray;
+    border-radius: 10px;
+    color: black;
+}
+
+main > section:nth-child(3) {
+    color: black;
+    border: 5px solid gray;
     border-radius: 10px;
 }
