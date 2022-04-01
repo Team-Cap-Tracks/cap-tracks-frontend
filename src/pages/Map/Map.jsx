@@ -2,6 +2,8 @@ import React from 'react'
 
 export const Map = () => {
   return (
-    <div>Map</div>
+    <img
+    src='https://i.imgur.com/bHoOQWE.jpg' alt='A map of the DC metro system'
+    />
   )
 }
