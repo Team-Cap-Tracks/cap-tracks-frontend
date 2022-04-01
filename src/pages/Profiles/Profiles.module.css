@@ -10,3 +10,36 @@ li {
 .welcome {
     font-size: 30px;
 }
+
+main {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: #282c34;
+    min-height: 100vh;
+    color: white;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 1.2rem;
+    margin: 1.2rem;
+    min-height: max(50vh, 500px);
+}
+
+button {
+    font-size: 1.3rem;
+}
+
+main > section:first-child {
+    border: darkgray 5px solid;
+    border-radius: 10px;
+}
+
+main > section:last-child {
+    border: 5px solid blueviolet;
+    border-radius: 10px;
+}
