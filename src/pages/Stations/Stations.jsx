@@ -1,7 +1,7 @@
 import { Link, useLocation } from 'react-router-dom'
 import styles from '../Stations/Stations.module.css'
 
-const StationsList = (props) => {
+const StationsList = () => {
   let location = useLocation()
 
   const lineName = location.state.line.line
@@ -9,7 +9,7 @@ const StationsList = (props) => {
   function capitalizeFirstLetter(string) {
     return string.charAt(0).toUpperCase() + string.slice(1);
   }
-  
+
   return (
     <>
       <h1 className={styles.station}>{capitalizeFirstLetter(lineName)} Line Stations</h1>
