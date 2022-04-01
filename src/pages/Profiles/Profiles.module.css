@@ -35,17 +35,13 @@ button {
 
 main > section:first-child {
     border: darkgray 5px solid;
-    border-radius: 10px;
 }
 
 main > section:nth-child(2) {
-    border: 5px solid gray;
-    border-radius: 10px;
     color: black;
 }
 
 main > section:nth-child(3) {
     color: black;
-    border: 5px solid gray;
-    border-radius: 10px;
+    
 }
