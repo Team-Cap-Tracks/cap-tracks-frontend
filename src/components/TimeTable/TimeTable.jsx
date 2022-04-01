@@ -37,7 +37,7 @@ const TimeTable = (props) => {
       {/* Last Trains */}
       <p>Last Trains: {schedule?.Sunday?.LastTrains[0]?.Time} am to {schedule?.Sunday?.LastTrains[0]?.DestinationStation} {schedule?.Sunday?.LastTrains[1]?.DestinationStation} {schedule?.Sunday?.LastTrains[2]?.DestinationStation} {schedule?.Sunday?.LastTrains[3]?.DestinationStation} {schedule?.Sunday?.LastTrains[4]?.DestinationStation}</p>
     </div>
-    <br></br>
+    <br/>
     </>
   )
 }
