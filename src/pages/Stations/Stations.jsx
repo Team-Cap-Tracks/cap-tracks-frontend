@@ -9,6 +9,7 @@ const StationsList = (props) => {
   function capitalizeFirstLetter(string) {
     return string.charAt(0).toUpperCase() + string.slice(1);
   }
+  
   return (
     <>
       <h1 className={styles.station}>{capitalizeFirstLetter(lineName)} Line Stations</h1>
