@@ -2,6 +2,7 @@ import { useState, useRef } from 'react'
 import { useLocation } from 'react-router-dom'
 
 
+
 const EditForm = ({lines, handleUpdateTicket }) => {
     const location = useLocation()
     const formElement = useRef()
@@ -61,6 +62,8 @@ const EditForm = ({lines, handleUpdateTicket }) => {
 
   return (
     <>
+        <main>
+        <section>
         <div>Ticket Form</div>
             <label>Origin:</label>
         <form onSubmit={handleSubmit}>
@@ -121,8 +124,10 @@ const EditForm = ({lines, handleUpdateTicket }) => {
                                 </>
                         })}
                 </select>
-            <button type='submit'>Update Ticket</button>
+            <button className='button' type='submit'>Update Ticket</button>
         </form>
+        </section>
+        </main>
     </>
   )
 }
