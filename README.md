@@ -8,12 +8,16 @@ Link to [trello board](https://trello.com/b/HGuUv6hL/unit-3-project)
 ![Screenshot of wireframe](https://i.imgur.com/d5NXTuX.png)
 ### Technologies Used:
 -----------
-* Javascript
-* HTML/CSS
-* MongoDB/Mongoose
-* Express
-* React
-* Node
+* Javascript (ES2015)
+* HTML5
+* 
+* MongoDB/Mongoose (v6.0.12)
+* Express (v4.17)
+* React (v18)
+* Node (v16.14.2 LTS)
+* Bootstrap (v5.1)
+* Material UI (v5.5.2)
+
 
 ### Next Steps:
 -----------
