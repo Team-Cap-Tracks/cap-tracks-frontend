@@ -7,7 +7,7 @@ const TicketCard = ({ticket, handleDelete, lines, handleUpdateTicket}) => {
     <>
     <div className={styles.ticketcard}>
       <p>Origin: {ticket.startStation} Destination: {ticket.endStation}</p>
-      <button onClick={() => handleDelete(ticket._id)}>Delete Ticket</button>
+      <button className={styles.button} onClick={() => handleDelete(ticket._id)}>Delete Ticket</button>
       <Link 
         to='/editTicket'
         state={{ticket}}
