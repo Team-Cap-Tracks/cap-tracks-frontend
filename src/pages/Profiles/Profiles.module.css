@@ -29,11 +29,19 @@ section {
 }
 
 main > section:first-child {
-    border: darkgray 5px solid;
+    margin-bottom: auto;
+    color: black;
+    border: 2px solid black;
+    border-radius: 10px;
+    color: #272743;
 }
 
 main > section:nth-child(2) {
+    margin-bottom: auto;
     color: black;
+    border: 2px solid black;
+    border-radius: 10px;
+    color: #272743;
 }
 
 main > section:nth-child(3) {
