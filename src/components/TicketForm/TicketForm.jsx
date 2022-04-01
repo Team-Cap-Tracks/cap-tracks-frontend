@@ -62,13 +62,13 @@ const TicketForm = ({lines, handleAddTicket }) => {
     <>
         <div>Ticket Form</div>
             <label>Origin:</label>
-        <form onSubmit={handleSubmit}>
+        <form className="form-inline" onSubmit={handleSubmit}>
                 <select 
                 name='Lines' 
                 onChange={event => handleLineSelect(event)} 
                 value={selectedLine} 
-                className="form-select form-select-lg mb-3" 
-                aria-label=".form-select-lg example">
+                className="form-select form-select-md mb-3" 
+                aria-label=".form-select-md example">
                     Origin: 
                     <option value=''>Select Origin Line</option>
                     {lineList.map((lines, idx) => (

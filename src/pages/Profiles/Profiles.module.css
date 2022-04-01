@@ -4,9 +4,49 @@ li {
     font-family: "Poppins";
     font-weight: bold;
     list-style-type: none;
-    text-align: center;
 }
 
 .welcome {
-    font-size: 30px;
+    font-size: 40px;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 1.2rem;
+    margin: 1.2rem;
+    min-height: max(50vh, 500px);
+}
+
+main > section:first-child {
+    margin-top: 2.2%;
+    margin-bottom: auto;
+    color: black;
+    border: 2px solid black;
+    border-radius: 10px;
+    color: #272743;
+}
+
+main > section:nth-child(2) {
+    margin-top: 2.2%;
+    margin-bottom: auto;
+    color: black;
+    border: 2px solid black;
+    border-radius: 10px;
+    color: #272743;
+}
+
+main > section:nth-child(3) {
+    color: black;
+    max-width: 30%;
+
 }

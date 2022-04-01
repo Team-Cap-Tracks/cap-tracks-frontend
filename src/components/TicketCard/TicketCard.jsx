@@ -1,18 +1,23 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import styles from './TicketCard.module.css'
 
 const TicketCard = ({ticket, handleDelete, lines, handleUpdateTicket}) => {
   return (
     <>
-    <p>Origin: {ticket.startStation} Destination: {ticket.endStation}</p>
-    <button onClick={() => handleDelete(ticket._id)}>Delete Ticket</button>
-    <Link 
-      to='/editTicket'
-      state={{ticket}}
-      
-    >
-      <button>Update Ticket</button>
-    </Link>
+    <div className={styles.ticketcard}>
+      <p><strong>Origin:</strong> {ticket.startStation} 
+      <br/>
+      <strong>Destination:</strong> {ticket.endStation}</p>
+      <button className={styles.button} onClick={() => handleDelete(ticket._id)}>Delete Ticket</button>
+      <Link 
+        to='/editTicket'
+        state={{ticket}}
+        
+      >
+        <button className={styles.button}>Update Ticket</button>
+      </Link>
+    </div>
     </>
   )
 }
