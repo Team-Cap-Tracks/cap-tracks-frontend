@@ -20,9 +20,6 @@ button {
   font-size: 1.3rem;
 }
 
-main > section:first-child {
-  border: darkgray 5px solid;
-}
 
 .button {
   background-color: #555373;

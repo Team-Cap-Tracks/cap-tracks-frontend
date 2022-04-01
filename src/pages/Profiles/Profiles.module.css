@@ -29,6 +29,7 @@ section {
 }
 
 main > section:first-child {
+    margin-top: 2.2%;
     margin-bottom: auto;
     color: black;
     border: 2px solid black;
@@ -37,6 +38,7 @@ main > section:first-child {
 }
 
 main > section:nth-child(2) {
+    margin-top: 2.2%;
     margin-bottom: auto;
     color: black;
     border: 2px solid black;
