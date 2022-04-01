@@ -5,6 +5,9 @@ Cap-Tracks is a route-planning application that takes the mess away from reliabl
 ### Getting Started: 
 ---------
 Link to [trello board](https://trello.com/b/HGuUv6hL/unit-3-project)
+
+Try Cap-Tracks for yourself!:
+[deployed app](https://cap-tracks.herokuapp.com/)
 ### Screenshots:
 ----------
 ![Screenshot of wireframe](https://i.imgur.com/FZieaFA.png)
