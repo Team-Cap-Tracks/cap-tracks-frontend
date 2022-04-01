@@ -1,5 +1,5 @@
 # Cap-Tracks
-Cap-Tracks is a route-planning application that takes the mess away from reliable D.C. Metro information and access. It allows the user to view important information, such as station locations and schedule. From there, the user can create a 'ticket' for a specific station-to-station ride. 
+Cap-Tracks is a route-planning application that simplifies the D.C. Metro system. Cap-Tracks allows the user to view important information, such as station locations and schedules. Additionally, logged in users can create a 'ticket' for a specific station-to-station ride. 
 ---------------
 
 ### Getting Started: 
