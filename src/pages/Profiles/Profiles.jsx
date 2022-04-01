@@ -25,7 +25,7 @@ const Profiles = ({ user, handleLogout, lines, handleAddTicket, tickets, handleD
       </div>
       </>
       :
-      <h1>No User</h1>
+      <h1>Please login</h1>
       }
     </>
   )
