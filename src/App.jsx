@@ -15,6 +15,7 @@ import * as timeTableService from './services/TimeTables'
 import * as ticketService from './services/ticketService'
 import { FooterContainer } from './containers/footer'
 import StationDetails from './pages/StationDetails/StationDetails.jsx'
+import { Map } from './pages/Map/Map.jsx'
 
 
 import "./App.css"
@@ -119,6 +120,7 @@ const App = () => {
           <Route path='/station-details/:code' 
             element={<StationDetails timeTables={{timeTables}}/>}
           />
+          <Route path='/map' element={<Map />} />
         </Routes>
       </div>
       <FooterContainer
