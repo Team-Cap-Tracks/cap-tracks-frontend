@@ -14,7 +14,6 @@ const Lines = ({lines}) => {
         <LinesCard
         lines={line}
         />
-
       </Link>
     })}
     </>
