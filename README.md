@@ -4,12 +4,12 @@ Cap-Tracks is a route-planning application that simplifies the D.C. Metro system
 
 ### Getting Started: 
 ---------
-Link to [trello board](https://trello.com/b/HGuUv6hL/unit-3-project)
+Link to [Trello Board](https://trello.com/b/HGuUv6hL/unit-3-project)
 
-Link to [back end repository](https://github.com/Team-Cap-Tracks/cap-tracks-backend)
+[Back End Repository](https://github.com/Team-Cap-Tracks/cap-tracks-backend)
 
 
-Try Cap-Tracks for yourself!:
+Cap-Tracks Live Site:
 [deployed app](https://cap-tracks.herokuapp.com/)
 ### Screenshots:
 ----------
